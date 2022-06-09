@@ -55,7 +55,7 @@ Criar um chave pública e uma chave privada:
 1º passo: abrir o Git Bash
 2º passo: ssh-keygen -t ed25519 -C felipebueno6@hotmail.com		e-mail do github
 3º passo: enter
-4º passo: escolher uma senha 						ffeelliippee
+4º passo: escolher uma senha 						
 5º passo: confirmar senha
 
 Acessar o arquivo com as chaves: 
@@ -73,7 +73,7 @@ Acessar o arquivo com as chaves:
 10º passo: voltar ao git bash
 11º passo: eval $(ssh-agent -s)						Agent pid 2139
 12º passo: ssh-add id_ed25519						usar a chave privada
-13º passo: confirmar a senha						ffeelliippee
+13º passo: confirmar a senha						
 
 Clonar um repositório do github:
 1º passo: acessar o github e ir até o arquivo do repositório
@@ -93,8 +93,7 @@ Token:
 6º passo: 60 dias
 	  Obeservação(note): "Meu token"
 	  marcar a opção repo(repositório)
-7º passo: gerar token
-	  token gerado: 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		esse token não será mais visto nesta página, se necessário, gerar outro
+7º passo: gerar token							esse token não será mais visto nesta página, se necessário, gerar outro
 
 Clonar um repositório do github:
 1º passo: acessar o github e ir até o arquivo do repositório

@@ -21,4 +21,4 @@ Criar um repositório do GitHub:
 	  git remote add origin git@github.com:FelipeBZanardo/livro-receitas.git
 10º passo: verificar se está tudo certo: git remote -v
 11º passo: git push origin master
-12º passo: colocar a senha: ffeelliippee
+12º passo: colocar a senha
