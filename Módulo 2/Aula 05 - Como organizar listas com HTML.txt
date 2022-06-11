@@ -1,0 +1,17 @@
+======================================================================================================================
+						TAG LISTAS
+======================================================================================================================
+
+Listas servem para agrupar coleção de itens.
+
+<ul>					<ul> representa uma lista onde a ordem dos itens não é importante
+item 1
+item 2
+</ul>
+
+<ol>					<ol> a ordem dos itens é importante. Os itens são organizados com letras, números ou algarismos romanos
+1. item 1
+2. item 3
+</ol>
+
+<li>					<li> é um item da lista

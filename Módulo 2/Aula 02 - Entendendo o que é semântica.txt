@@ -1,0 +1,9 @@
+Antigamente todo conteúdo era escrito através de <div>
+
+Com o surgimento do HTML5 passou a surgir outros elementos:
+	- <section>	representa uma seção genérica de conteúdo, como uma lista de artigos
+	- <header> 	cabeçalho da página ou de parte da página, isto é, um cabeçalho de uma section
+	- <article>	conteúdo relevante dentro da sua página, como um artigo de um blog por exemplo
+	- <aside>	conteúdo relacionado ao conteúdo principal de uma página, como a biografia de um ator ou links relacionados
+	- <footer>	rodapé da página ou de parte da página, ou seja, um rodapé do <article> ou de uma <section>
+	- <h1>-<h6>	Não foram criados no HTML5. São títulos. Única regra: apenas um <h1> por página

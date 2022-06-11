@@ -1,0 +1,25 @@
+A criação do HTML foi pensada na ideia de compartilhar documentos e textos
+
+===========================================================================================================================
+						TAGS PARA TEXTO
+===========================================================================================================================
+
+<h1>Título da página</h1>
+<h2>Título de seção</h2>
+<h3>Título de artigo</h3>
+<p>Conteúdo do artigo</p>		<p> representa um parágrafo. Usar para textos maiores.
+					Suporta imagens, códigos e vídeos
+
+
+===========================================================================================================================
+						TAGS PARA LINKS
+===========================================================================================================================
+
+<a>Link</a>						<a> é uma âncora. Responsável por interligar conteúdos
+
+<a href="link">Título do link</a>			href é o hiperlink para onde a âncora está apontando
+<a href="maito:felipebueno6@hotmail.com">E-mail</a>	para e-mail não esquecer do mailto
+<a href="tel:11981600214">Telefone</a>			para telefone não esquecer do tel
+
+<a target="_blank">Link</a>				target indica como o link vai ser aberto
+							_blank indica que vai ser aberto em uma nova aba

@@ -1,0 +1,29 @@
+===================================================================================================================
+						HTML
+===================================================================================================================
+
+Criado por Tim Berners-Lee
+HTML 1 - 1991 - 18 elementos
+HTML 2 - 1995
+HTML 3 - 1997
+HTML 4 - 1997
+HTML 5 - 2014
+------------------------------------------------------------------------------------------------------------
+Elemento é a base do HTML.
+
+Estrutura do Elemento HTML:
+
+tag de abertura - Atributo - Conteúdo - tag de fechamento
+------------------------------------------------------------------------------------------------------------------
+Estrutura básica:
+
+<!DOCTYPE html>						não é um elemento html, apenas se refere ao que está escrevendo
+<html>							todo conteúdo está dentro de <html></html>
+ <head>							
+  <meta>						meta informações que o navegador e que o buscador de internet necessita
+							charset - encoding dos caracteres
+  <title></title>					título na aba do navegador
+ </head>
+ <body>							conteúdo da página
+ </body>
+</html>

@@ -1,0 +1,13 @@
+======================================================================================================================
+						TAG IMAGENS
+======================================================================================================================
+<img>					sem tag de fechamento
+
+<img src="img/avatar.jpg">		src é obrigatório. Mostra o caminho. Podendo ser tanto dentro da sua máquina ou de um site
+
+<img alt="Foto de Felipe">		alt não é obrigatório, mas é recomendado. Mostra a descrição da foto quando a mesma não é carregada. Mostra o significado da imagem
+
+------------------------------------------------------------------------------------------------------------------------
+sites úteis:
+	- unsplash
+	- tinypng.com			otimizar imagens
