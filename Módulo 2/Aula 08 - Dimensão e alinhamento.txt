@@ -1,0 +1,9 @@
+width:			largura					px ou %					100% faz ocupar todo o espaço em relação ao que está de fora.
+height: 		altura										Ex: se há uma imagem dentro de um article, essa imagem ocupará 100% da largura ou altura desse article
+
+max-width:		largura máxima
+max-height:		altura máxima
+
+margin			espaçamento de elementos		margin auto				centraliza automaticamente a tela, independente do tamanho			
+
+text align:		alinhar textos				left,right,center,justify

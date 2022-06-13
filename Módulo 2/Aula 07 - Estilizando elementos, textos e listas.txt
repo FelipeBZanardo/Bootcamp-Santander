@@ -1,0 +1,151 @@
+================================================================================================================================================================
+								ESTILIZANDO ELEMENTOS
+================================================================================================================================================================
+==================
+PADDING E MARGIN:
+==================
+
+Dá para atribuir para o padding vários valores de uma só vez:
+
+.post{
+	padding: 10px;						todos os lados com o mesmo valor
+}
+
+.post{
+	padding: 10px 5px;				10px representa o eixo y, ou seja, em cima e em baixo
+}							5px representa o eixo x, ou seja, lado esquerdo e direito
+
+.post{
+	padding: 15px 10px 5px 0;			cima, direita, baixo e esquerda, respectivamente.
+							0 não precisa colocar unidade(px)
+}
+
+.post{
+	padding-top: 15px;				é o mesmo que o anterior, mas utilizando as propriedades
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+=================
+BACKGROUND:
+=================
+
+.post{
+	background-color: green;
+	background-image: url("caminho para a imagem");
+	background-position: top;
+}
+
+Formas diferentes de mudar a cor de fundo:
+	background-color: green;
+	background-color: #008800;
+	background: #008800;
+
+=================
+BORDER:
+=================
+
+Propriedades: 
+	- largura: pixels, centímetros, milímetros
+	- cor: blue, #0000ff
+	- estilo: sólida(solid), pontilhada(dotted), tracejada(dashed)
+
+Exemplo:
+	.post{
+		border: 3px solid blue;
+		border-top: 2px dotted green;
+		border-right: 4px dashed pink;
+	}
+
+	.post{
+		border-width: 3px;
+		border-style: solid;
+		border-color: #505050;
+	}
+
+	.post{									fazer para top, bottom, right, left
+		border-top-width: 3px;
+		border-top-style: solid;
+		border-top-color: blue;
+	}
+
+border-radius: 10px;								para todos os lados
+border-radius: 50%;
+border-radius: 10% 20%;								cima e baixo; direita e esquerda
+border-radius: 10% 20% 15% 22%							top, right, bottom, left
+
+>>>>>>>>>>>>>PARA DEIXAR CIRCULAR: border-radius: 50%<<<<<<<<<<<<<<<<<<<<<<
+
+================================================================================================================================================================
+								ESTILIZANDO TEXTOS
+================================================================================================================================================================
+
+1. font-family: altera a fonte do texto
+
+	#title{
+		font-family: Verdana;
+	}
+
+	.post_title{
+		font-family: Arial, Verdana;						caso a primeira fonte não funcione, será utilizada a segunda
+	}
+
+2. font-size: altera o tamanho do texto
+
+	#title{
+		font-size: 30px;
+	}
+
+3. font-style: altera a aparência do texto
+
+	#title{
+		font-style: normal;							normal(padrão), italic,
+	}
+
+4. font-weight: altera o peso do texto
+
+	#title{
+		font-weight: normal;							normal, bold(negrito)	
+	}
+
+5. text-transform: altera o texto entre maísculas e minúsculas
+
+	uppercase: tudo maiúsculas
+	lowercase: tudo minúsculas
+	capitalize: primeira letra maiúscula de cada palavra
+
+	#title{
+		text-transform: uppercase;
+	}
+
+6. text-decoration: destaque a um texto
+
+	underline: linha abaixo da palavra
+	overline: linha acima da palavra
+	line-through: corta a palavra
+
+	#title{
+		text-decoration: underline;
+	}
+
+================================================================================================================================================================
+								ESTILIZANDO LISTAS
+================================================================================================================================================================
+
+ul {										lista não ordenada
+	list-style-type: square;
+}
+
+ol {
+	list-style-type: upper-roman;						lista ordenada
+}
+
+square: quadrado
+upper-roman: algarismo romano maiúsculo
+"\1F44D": emoji de joinha
+none: sem símbolo
+
+ul{
+	list-style-image: url("caminho para a imagem");
+}

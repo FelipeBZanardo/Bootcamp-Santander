@@ -1,0 +1,48 @@
+1996 - foi criado a linguagem de estilo chamada de CSS
+
+"Você cria regras de estilos para elementos ou grupo de elementos"
+
+Uma regra CSS é formada por um seletor ou grupo de seletores(são os elementos HTML: a,p,h1...)
+e através de um par de chaves colocamos as declarações.
+Uma declaração é formada por uma propriedade e por um valor.
+Exemplo:
+	propriedade: valor;	
+	color: blue;
+	font-size: 14px;
+
+Exemplo de uma regra CSS:
+	a {
+	    color: blue;
+		font-size: 14px}
+----------------------------------------------------------------------------------------------------------------
+id e class podem representar qualquer tipo de elemento
+
+Formas diferentes de se declarar um id e uma class	
+	Id	Class
+HTML	id = 	class=
+CSS	.	#
+
+Exemplo HTML:
+	<header id="header" class="header"></header>
+
+Exemplo CSS(id e class respectivamente:
+
+	.header{
+	  padding: 10px;
+	}
+
+	#header{
+	  padding: 15px;
+	}
+
+id só pode ser utilizado uma vez na página
+
+-----------------------------------------------------------------------------------------------------------------------------
+BoxModel:
+Cada elemento do html é representado por uma caixa retangular
+
+4 camadas: 
+	- margin: espaçamento entre elementos
+	- border: circundam o padding e o content. Podemos alterar a largura e a cor
+	- padding: espaçamento entre a borda e o conteúdo
+	- content: é o que o bloco representa, um texto, uma imagem ou um vídeo

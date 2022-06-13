@@ -1,0 +1,35 @@
+body:
+	- cor de fundo
+	- fonte
+	- máxima largura da tela
+	- centralizar o conteúdo
+
+imagem:
+	- borda
+	- arredondamento da borda
+	- largura 
+	- comprimento
+
+títulos:
+	- cor
+	- fonte
+	- estilo da fonte
+	- tamanho da fonte
+	- letra maíuscula ou minúscula
+	- sublinhado ou taxado
+
+article:
+	- cor de fundo
+	- padding
+	- borda
+	- arrendondamento da borda
+
+listas:
+	- estilo da lista
+	- padding
+	
+elementos da lista:
+	- cor
+	- decoração do texto
+	
+	
