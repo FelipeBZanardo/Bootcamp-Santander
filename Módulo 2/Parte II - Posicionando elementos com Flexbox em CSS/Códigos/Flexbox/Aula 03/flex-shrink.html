@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos - flex shrink</title>
+        <style>
+            .flex-container{
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+            }
+
+            .flex-items{
+                text-align: center;
+                margin: 5px;
+                background-color: blueviolet;
+                color: white;
+                font-size: 24px;
+                margin: 5px;
+            }
+
+            .sh-0{
+                flex-shrink: 0;
+                flex-basis: 100px;
+            }
+
+            .sh-1{
+                flex-shrink: 1;
+            }
+
+            .sh-2{
+                flex-shrink: 2;
+                flex-basis: 100px;
+            }
+
+            .sh-3{
+                flex-shrink: 3;
+                flex-basis: 100px;
+            }
+
+            .fg-1{
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <p>flex-shrink: 1;</p>
+        <div class="flex-container">
+            <div class="flex-items sh-1 fg-1">A</div>
+            <div class="flex-items sh-1 fg-1">B</div>
+            <div class="flex-items sh-1 fg-1">C</div>
+            <div class="flex-items sh-1 fg-1">D</div>
+            <div class="flex-items sh-1 fg-1">E</div>
+        </div>
+        
+        <div class="flex-container">
+            <div class="flex-items sh-1 fg-1">A</div>
+            <div class="flex-items sh-1 fg-1">The generated lorem Ipsum</div>
+            <div class="flex-items sh-1 fg-1">C</div>
+            <div class="flex-items sh-1 fg-1">D</div>
+        </div>
+
+        <p>flex-shrink: 0; / flex-basis: 100px;</p>
+        <div class="flex-container">
+            <div class="flex-items sh-0 fg-1">A</div>
+            <div class="flex-items sh-0 fg-1">The generated fffffffffffffff</div>
+            <div class="flex-items sh-0 fg-1">C</div>
+            <div class="flex-items sh-0 fg-1">D</div>
+        </div>
+
+        <p>flex-shrink: mix; / flex-basis: 100px;</p>
+        <div class="flex-container">
+            <div class="flex-items sh-1 fg-1">A</div>
+            <div class="flex-items sh-2 fg-1">The generated fffffffffffffff</div>
+            <div class="flex-items sh-2 fg-1">C</div>
+            <div class="flex-items sh-3 fg-1">D</div>
+        </div>
+    </body>
+</html>

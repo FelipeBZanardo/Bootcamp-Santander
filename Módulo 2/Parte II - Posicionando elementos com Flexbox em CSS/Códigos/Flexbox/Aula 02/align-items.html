@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Fundamentos - align items</title>
+        <style>
+            .flex-container{
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+            }
+
+            .flex-items{
+                text-align: center;
+                background-color: blueviolet;
+                color: white;
+                margin: 5px;
+                flex: 1;
+            }
+
+            .center{
+                align-items: center;
+            }
+
+            .stretch{
+                align-items: stretch;
+            }
+
+            .flex-start{
+                align-items: flex-start;
+            }
+
+            .flex-end{
+                align-items: flex-end;
+            }
+
+            .baseline{
+                align-items: baseline;
+            }
+
+            .row{
+                flex-direction: row;
+            }
+
+            .column{
+                flex-direction: column;
+            }
+
+            .central{
+                height: 300px;
+                justify-content: center;
+            }
+
+            .central .flex-items{
+                flex: 0;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ROW</h1>
+        <h3>Center</h3>
+        <div class="flex-container center row">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Stretch</h3>
+        <div class="flex-container stretch row">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Flex start</h3>
+        <div class="flex-container flex-start row">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Flex end</h3>
+        <div class="flex-container flex-end row">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Baseline</h3>
+        <div class="flex-container baseline row">
+            <div class="flex-items"><br>Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h1>COLUMN</h1>
+        <h3>Center</h3>
+        <div class="flex-container center column">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Stretch</h3>
+        <div class="flex-container stretch column">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Flex start</h3>
+        <div class="flex-container flex-start column">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Flex end</h3>
+        <div class="flex-container flex-end column">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Baseline</h3>
+        <div class="flex-container baseline column">
+            <div class="flex-items"><br>Item 1</div>
+            <div class="flex-items">Lorem ipsum dolor sit amet</div>
+            <div class="flex-items">Item 3 mais algum texto. Lipsum</div>
+        </div>
+
+        <h3>Alinhamento central à tela</h3>
+        <section class="flex-container central center">
+            <div class="flex-items">Lorem Ipsum is therefore always free from repetition, injected humour, or no-characteristic words etc.</div>
+        </section>
+    </body>
+</html>

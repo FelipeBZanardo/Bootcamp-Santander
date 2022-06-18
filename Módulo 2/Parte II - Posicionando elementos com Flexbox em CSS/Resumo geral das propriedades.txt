@@ -1,0 +1,96 @@
+https://origamid.com/projetos/flexbox-guia-completo/
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Propriedades do flex-container:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- display: flex	
+	inicia o flex-container
+
+- flex-direction: direciona o container em linha ou coluna.
+ 
+	row: em linha. Da esquerda para a direita. Padrão
+	row-reverse: da direita para a esquerda
+	column: em coluna. De cima para baixo
+	column-reverse: de baixo para cima
+
+- flex-wrap: quebra ou não a linha ou a coluna
+
+	nowrap: não quebra a linha. Padrão
+	wrap: quebra a linha
+	wrap-reverse: quebra a linha para cima ou quebra a coluna para a esquerda dependendo do flex-direction
+
+- flex-flow: abreviação para flex-direction e flex-wrap
+
+- justify-content: alinha os items do flex-container, no sentido do flex-direction.
+	Se flex-direction: row, essa propriedade alinha no sentido horizontal
+	Se flex-direction: column, essa propriedade alinha no sentido vertical
+	Só funciona se houver espaço sobrando dentro do container.
+	
+	flex-start: no começo
+	flex-end: no fim
+	center: no centro
+	space-between: espaçamento igual entre os items
+	space-around: espaçamento do meio é duas vezes maior que o inicial e o final
+
+- align-items: alinha os items no sentido oposto do flex-direction.
+	
+	stretch: o tamnho é igual para todos. Esse tamenho é do item com maior caracteres
+	flex-start: no início
+	flex-end: no fim
+	center: no centro
+	baseline: de acordo com a linha base
+
+- align-content: alinha no sentido vertical.
+	Só funciona com flex-wrap: wrap;
+	Só funciona se o tamnho do container for maior que a soma das linhas dos items
+	Deve definir height para o container.
+
+	stretch: o tamnho é igual para todos. Esse tamenho é do item com maior caracteres
+	flex-start: no início
+	flex-end: no fim
+	center: no centro
+	space-between: espaçamento igual entre os items
+	space-around: espaçamento do meio é duas vezes maior que o inicial e o final
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Propriedades do flex-items:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-flex-grow: capacidade de um item crescer.
+
+	0 é o padrão: valor máximo ao width definido	
+	1: todos os itens terão a mesma largura e ocuparão 100% do container
+	2: significa que ocupará um espaço duas vezes maior que o flex-grow: 1
+
+- flex-basis: indica o tamnho inicial do flex-item antes da distribuição de espaço restante
+
+	auto: padrão. Altura é de acordo com o conteúdo
+	unidade (% ou px): 
+	0: todos os elementos com a mesma altura.
+
+- flex-shrink: capacidade de redução de um item
+
+	1: é o padrão. permite que os items tenham seu tamanho reduzido para caber no container
+	0: não permite redução de tamanho
+	2: permite reduzir duas vezes mais do que com valor 1
+
+- flex: atalho para as propriedades grow, shrink e basis
+	
+	1: grow: 1, shrink:1 e basis:0
+	2: grow: 2, shrink:1 e basis:0
+
+- order: ordenação dos items
+
+	0: é o padrão. Ordenação original
+
+- align-self: alinhamento de um flex-item específico
+	é prioritário quando comparado com o align-items.
+	alinha no sentido oposto ao flex-direction.Ou seja, se está em linha, o alinhamento será no topo da linha, no final ou no centro da linha e assim por diante
+
+	auto: é o padrão. respeita o align-item
+	flex-start: no início
+	flex-end: no fim
+	center: no centro
+	baseline: de acordo com a linha de base
+	stretch: estica o item

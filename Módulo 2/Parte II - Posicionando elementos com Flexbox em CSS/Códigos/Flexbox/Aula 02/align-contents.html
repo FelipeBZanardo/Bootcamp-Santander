@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos - align contents</title>
+        <style>
+            .flex-container{
+                height: 350px;
+                flex-wrap: wrap;
+                display: flex;
+                max-width: 300px;
+                border: 1px solid black;
+            }
+
+            .flex-items{
+                text-align: center;
+                background: blueviolet;
+                color: white;
+                padding: 0 5px;
+                margin: 5px;
+                flex: 1;
+            }
+
+            .stretch{
+                align-content: stretch;
+            }
+
+            .center{
+                align-content: center;
+            }
+
+            .start{
+                align-content: flex-start;
+            }
+
+            .end{
+                align-content: flex-end;
+            }
+
+            .between{
+                align-content: space-between;
+            }
+
+            .around{
+                align-content: space-around;
+            }
+        </style>
+    </head>
+    <body>
+        <p>stretch</p>
+        <div class="flex-container stretch">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+        <p>center</p>
+        <div class="flex-container center">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+        <p>Flex start</p>
+        <div class="flex-container start">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+        <p>flex end</p>
+        <div class="flex-container end">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+        <p>Space between</p>
+        <div class="flex-container center between">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+        <p>Space around</p>
+        <div class="flex-container around">
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from</div>
+            <div class="flex-items">Lorem Ipsum is therefore always free from reperirion, injected humor, or non-characteristic words etc.</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+            <div class="flex-items">Lorem Ipsum is therefore</div>
+        </div>
+    </body>
+    </body>
+</html>

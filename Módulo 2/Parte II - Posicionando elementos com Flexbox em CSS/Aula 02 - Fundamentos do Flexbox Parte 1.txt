@@ -1,0 +1,104 @@
+baixar as extensões no VSCode:
+	- HTML Snippets
+	- Live HTML Previewer
+
+----------------------------------------------------------------------------------------------------------------------------
+Display flex
+----------------------------------------------------------------------------------------------------------------------------
+Torna a tag um elemento do tipo flex container, e assim, automaticamente todos os seus filhos desta tag, tornam-se flex items
+
+Pode ser utlizado em qualquer tipo de tag do código HTML
+
+Cada item dentro do container passa a ocupar o máximo de seu conteúdo e se 
+abrigar dentro desse container respeitando a orientação em linha(padrão)
+
+----------------------------------------------------------------------------------------------------------------------------
+Flex direction
+----------------------------------------------------------------------------------------------------------------------------
+É a propriedade que estabelece o eixo principal do container, 
+definindo assim a direção que os flex items são colocados
+no flex container.
+
+Dois eixos(linha e coluna):
+	- row - linha - orientação horizontal: à direção do texto, esquerda para a direita. É O PADRÃO	
+			Exemplo: 1 2 3 4 
+	- row-reverse - linha - orientação horizontal: sentido oposto à direção do texto, ou seja, da direita para a esquerda
+			Exemplo: 4 3 2 1
+
+	- column - coluna - orientação vertical: ordenação de cima para baixo, em coluna única
+			Exemplo: 1
+				 2
+				 3
+				 4
+	-column-reverse - coluna - orientação vertical: ordenação inversa, de baixo para cima.
+			Exemplo: 4
+				 3
+				 2
+				 1
+
+----------------------------------------------------------------------------------------------------------------------------
+Flex wrap
+----------------------------------------------------------------------------------------------------------------------------
+É a propriedade que define se os itens devem ou não quebrar a linha.
+Por padrão eles não quebram a linha, isso faz com que os flex itens sejam compactados além do limite do conteúdo.
+
+- nowrap: é o padrão, não permite a quebra de linha.
+	Não quebrar a linha pode ocasionar itens passando do limite do container.
+
+- wrap: permite a quebra de linha assim que um dos flex itens não puder mais ser compactado.
+
+- wrap-reverse: permite a quebra de linha assim que um dos flex itens não puder mais ser compctado, 
+	porém na direção contrária da linha, acima.
+	
+----------------------------------------------------------------------------------------------------------------------------
+Flex flow
+----------------------------------------------------------------------------------------------------------------------------
+É um atalho para as propriedades flex-direction e flex-wrap.
+Porém seu uso não é tão comum, visto que, quando mudamos o flex-direction para column, mantemos o padão flex-wrap que é nowrap	
+	
+----------------------------------------------------------------------------------------------------------------------------
+Justify content
+----------------------------------------------------------------------------------------------------------------------------
+Essa propriedade vai se encarregar de alinhar os itens dentro do container de acordo com a direção pretendida 
+e tratar da distribuição de espaçamento entre eles.
+Caso seus itens(itens filhos) estejam ocupando 100% de todo o container, essa propriedade não se aplica.
+
+- flex-start: alinhamento no início do container. É o padrão
+- flex-end: alinhamento no final do container, respeitando o limite do conteúdo.
+- center: alinhamento ao centro do container
+- space-between: cria  um espaçamento igual entre os elementos. 
+	Primeiro elemento muito próximo ao início do container(borda esquerda),
+	último elemento muito próximo ao final do container(borda direita).
+- space-around: os espaçamentos do meio são duas vezes maiores que o inicial e o final.
+
+----------------------------------------------------------------------------------------------------------------------------
+Align Items
+----------------------------------------------------------------------------------------------------------------------------
+Trata do alinhamento dos flex itens de acordo com o eixo do container.
+O alinhamento é diferente para quando os itens estão em linha e em coluna
+Permite o alinhamento no eixo vertical.
+
+Diferente do Justify content, não há necessidade do conhecimento da altura dos itens
+
+Tipos de alinhamento:
+	- center: alinhamento dos itens ao centro
+	- stretch: padrão, e os flex itens crescem igualmente. Todos ficaram com o maior tamanho de todos os itens.
+	- flex-start: alinhamento dos itens no início
+	- flex-end: alinhamento dos itens no final
+	- baseline: alinhamento de acordo com a linha base da topografia dos itens
+
+----------------------------------------------------------------------------------------------------------------------------
+Align Contents
+----------------------------------------------------------------------------------------------------------------------------
+É a propriedade responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical do contaier.
+O container precisa:
+	- que utilize quebra de linhas
+	- a altura do container seja menor que a soma das linhas dos itens
+
+Tipos de alinhamento:
+	- center: alinhamento dos itens ao centro
+	- stretch: é o padrão e os flex itens crescem igualmente. Baseado no item maior
+	- flex-start: alinhamento dos itens no início
+	- flex-end: alinhamento dos itens no final
+	- space-between: cria um espaçamento igual entre os elementos
+	- space-around: os espaçamentos do meio são duas vezes maiores que o inicial e o final.

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos - flex</title>
+        <style>
+            .flex-container{
+                display: flex;
+                border: 1px solid black;
+                max-width: 400px;
+            }
+
+            .flex-items{
+                background-color: blueviolet;
+                color: white;
+                margin: 5px;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .flex-1{
+                flex: 1;
+                /*grow: 1, shrink: 1, bases: 0*/
+            }
+
+            .flex-2{
+                flex: 2;
+                /*grow: 2, shrink: 1, bases: 0*/
+            }
+
+            .largura{
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>flex: 1;</p>
+        <div class="flex-container">
+            <div class="flex-items flex-1">A</div>
+            <div class="flex-items flex-1">BBB</div>
+            <div class="flex-items flex-1">CC</div>
+            <div class="flex-items flex-1">D</div>
+            <div class="flex-items flex-1">EF</div>
+        </div>
+
+        <p>flex: mix;</p>
+        <div class="flex-container">
+            <div class="flex-items flex-1">A</div>
+            <div class="flex-items flex-2">BBB</div>
+            <div class="flex-items flex-2">CC</div>
+            <div class="flex-items flex-1">D</div>
+            <div class="flex-items flex-1">EF</div>
+        </div>
+
+        <p>width ignorado -> basis: 0;</p>
+        <div class="flex-container">
+            <div class="flex-items flex-1 largura">A</div>
+            <div class="flex-items flex-1 largura">BBB</div>
+            <div class="flex-items flex-1 largura">CC</div>
+            <div class="flex-items flex-1 largura">D</div>
+            <div class="flex-items flex-1 largura">EF</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos - order</title>
+        <style>
+            .flex-container{
+                display: flex;
+                border: 1px solid black;
+                max-width: 350px;
+                margin-bottom: 20px;
+            }
+
+            .flex-items{
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+                margin: 5px;
+                font-size: 24px;
+                flex: 1;
+            }
+
+            .o1{
+                order: 1;
+            }
+
+            .o2{
+                order: 2;
+            }
+
+            .o3{
+                order: 3;
+            }
+
+            .o4{
+                order: 4;
+            }
+
+            .direction{
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <p>order: 0</p>
+        <div class="flex-container">
+            <div class="flex-items">1</div>
+            <div class="flex-items">2</div>
+            <div class="flex-items">3</div>
+            <div class="flex-items">4</div>
+        </div>
+
+        <p>order: diferentes</p>
+        <div class="flex-container">
+            <div class="flex-items o3">1</div>
+            <div class="flex-items o4">2</div>
+            <div class="flex-items o1">3</div>
+            <div class="flex-items o2">4</div>
+        </div>
+
+        <p>Column - order: diferentes</p>
+        <div class="flex-container direction">
+            <div class="flex-items o3">1</div>
+            <div class="flex-items o4">2</div>
+            <div class="flex-items o1">3</div>
+            <div class="flex-items o2">4</div>
+        </div>
+    </body>
+</html>
