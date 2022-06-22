@@ -1,0 +1,32 @@
+Estrutura de um projeto:
+
+1 - Criar uma pasta com o nome do Projeto
+
+2 - Criar um arquivo com o nome: "index.html"
+	Usar a estrutura básica do HTML5
+
+3 - Criar uma pasta com o nome "assets"
+	- Criar uma pasta com o nome "css"
+		- Criar um arquivo com o nome "style.css"
+	- Criar uma pasta com o nome "js"
+		- Criar um arquivo com o nome "scripts.js"
+
+--------------------------------------------------------------------------------------
+No arquivo HTML:
+
+Antes da tag <title>
+
+Vincular o arquivo css:
+	<link rel="stylesheet" href="assets/css/style.css"/>
+
+Vincular o arquivo js:
+	<script src="assets/js/scripts.js"></script>
+
+-------------------------------------------------------------------------------------
+DOM: Document Object Model
+
+No console da página: index.html
+
+document.getElementsByTagName('h1')
+var heading = document.getElementsByTagName('h1')[0]
+heading.style.color = 'red'						muda a cor da tag h1 para vermelho

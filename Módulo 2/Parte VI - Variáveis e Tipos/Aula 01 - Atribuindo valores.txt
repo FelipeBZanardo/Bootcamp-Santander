@@ -1,0 +1,36 @@
+
+Original Variable as String	some awesome var		não utilizar para nome de variáveis
+Camel Case			someAwesomeVar			muito utilizado em JS
+Snake Case			some_awesome_var
+Kebab Case			some-awesome-var
+Pascal Case			SomeAwesomeVar
+Upper Case Snake Case		SOME_AWESOME_VAR		para constantes
+
+------------------------------------------------------------------------------------------------------------------
+Variáveis:
+------------------------------------------------------------------------------------------------------------------
+
+let - escopo de bloco. Usado em blocos de if, for, while, funções...
+var - escopo global
+
+	hoisting: atribuir um valor a uma variável antes de declará-la. So para var
+	redeclaração: apenas com var
+	reatribuição: pode ser let ou var
+
+------------------------------------------------------------------------------------------------------------------
+Constantes:
+------------------------------------------------------------------------------------------------------------------
+- Declarada em SNAKE_UPPER_CASE
+- Escopo de bloco
+- não faz hoisting
+- não pode reatribuir e nem redeclarar valores, pois são constantes
+
+
+------------------------------------------------------------------------------------------------------------------
+RESUMO:
+------------------------------------------------------------------------------------------------------------------
+			var		const		let
+Escopo		global ou local		bloco		bloco
+Redeclarar		sim		não		não
+Reatribuir		sim		não		sim
+Hoisting		sim		não		não

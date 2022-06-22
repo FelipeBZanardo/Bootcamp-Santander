@@ -1,0 +1,5 @@
+Frameworks: ferramentas desenvolvidas para tornar mais fácil a programação
+	- VuesJS
+	- Angular
+	- React: biblioteca!
+	- iQuery

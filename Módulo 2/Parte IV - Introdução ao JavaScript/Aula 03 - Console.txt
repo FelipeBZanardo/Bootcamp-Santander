@@ -1,0 +1,8 @@
+Para utilizar o console:
+	- abrir o navegador de internet
+	- botão direito e clicar em inspecionar
+	- ir na aba console
+
+Instalar Node Js
+
+node arquivo.js

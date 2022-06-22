@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------------------------
+MANIPULANDO UM ARQUIVO
+--------------------------------------------------------------------------------------------------------------------
+Comentário de linha: // 
+Comentário de várias linhas: /* */ 
+
+declarar variável: 
+	var nome_variavel = valor_inicial;
+
+declarar constante:
+	const NOME_VARIAVEL = valor_inicial; 		para constantes, declarar em Letras maiúsculas
+
+declarar uma função:
+	function nome_funcao (){
+		parâmetros da função
+	}
+
+visualizar na tela:
+	console.log(conteúdo)

@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------------------------------------------------
+O que é o JavaScript
+-------------------------------------------------------------------------------------------------------------------------
+Características básicas:
+	- Interpretada: rodada em tempo real. 
+	- Baseada em Protótipos: base para estrutura de dados. Conjunto de funções e possibilidades em comuns dentro daessa estrutura de dados
+	- Multiparadigma: escolhe se vai trabalhar com orientação a objetos, programação funcional ou programação estruturada
+	- Comumente utilizada em aplicações web client-side: interação com o usuário
+	- Segue o padrão ECMAScript: padrão para várias linguagens. Normas de funcionalidades de atualizações da linguagem
+
+Evolução: 
+1995 - criado o JS
+1997 - padrao ECMASCRIPT
+1999 - ECMA 3 - Regex
+Olhar Slides
+
+Aplicações:
+	- Web
+	- Mobile
+	- Smartwatches
+	- Games
+	- Internet of Things
+	- APIs

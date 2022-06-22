@@ -1,0 +1,110 @@
+------------------------------------------------------------------------------------------------------------------
+Estrutura de dados:
+---------------------------------------------------------------------------------
+
+JS é uma linguagem de tipagem dinâmica, ou seja, não precisa declarar o tipo, se é int ou float por exemplo
+
+typeof variável		verificar o tipo da variável
+
+Tipos de dados:
+	- Primitivos: Não tem métodos
+		- números
+		- strings
+		- boolean
+		- null
+		- undefined
+
+	- Compostos/não-primitivos:
+		- objetos
+		- arrays
+
+-----------------------
+Strings:
+-----------------------
+
+- utilizadas em texto
+- valores declarados entre aspas ou crases
+
+Métodos:
+
+var1.concat(var2)		concatenar
+var1 + var2			concatenar
+`texto aqui ${var}`		concatenar
+var.length			comprimento da string
+var[0]				primeiro caracter da string var
+\"				imprimir aspas
+string.split(" ")		separa as palavras da string
+string.includes("letra")	retorna true, se letra pertencer a string
+string.startsWith("letra")	retorna true, se a string começar com a letra procurada
+string.endsWith("letra")	retorna true, se a string terminar com a letra procurada
+string.replace("existe","troca")troca apenas a primeira aparição
+string.replaceAll("", "")	troca todas as aparições
+
+-----------------------
+Numbers:
+-----------------------
+
+usar os operadores aritméticos
+
+biblioteca Math:
+Math.PI				pi
+Math.floor(núm)			arredonda pra baixo
+Math.ceil(núm)			arredonda para cima
+
+
+num.toString()			transforma número em string
+
+-----------------------
+Boolean:
+-----------------------
+
+true / false
+
+Usar os operadores lógicos
+
+-----------------------
+Arrays:
+-----------------------
+
+São vetores. 
+Listas iteráveis de elementos
+
+Index sempre começa do 0
+
+let array = []		ou		let array = new Array()
+
+array.push(elemento)		adicionar um elemento ao final da array
+array.unshift(elemento)		adiciona um elemento no início da array
+array.pop()			elimina o último elemento da array
+array.shift()			elimina o primeiro elemento da array
+array.includes(elemento)	retorna true se o elemento pertencer ao array
+array.every(item => item === 5)	retorna true se todos os elementos de array forem 5
+array.some(item => item ===5)	retorna true se pelo menos um elemento da array for igual a 5
+array.reverse()			inverte a ordem dos elementos
+array.toString()		transforma o array em uma string
+
+for (let i = 0 ; i < array.length ; i++) {console.log(array[i]) }	print de todos os elementos do array
+
+-----------------------
+Objetos:
+-----------------------
+é similar a um dicionário em python
+
+let pessoa = {nome: "Felipe", idade: 28};		ou 		let pessoa = {};
+									pessoa.nome = "Felipe";
+									pessoa.idade = 28;
+
+Object.values(pessoa)			retorna um array com os valores do objeto pessoa, no caso, ["Felipe", 28]
+Object.keys(pessoa)			retorna um array com as chaves do objeto, no caso, ["nome", "idade"]
+pessoa.name ou pessoa["name"]		retorna o valor correspondente
+
+-----------------------
+Empty, undefined e null:
+-----------------------
+empty: 0, "", [], {}			significa vazio
+
+null: 					de propósito esse valor não existe. Retorna como se fosse um Object
+
+undefined				indefinido, não foi declarado
+
+
