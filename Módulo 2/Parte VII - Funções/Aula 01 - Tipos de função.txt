@@ -1,0 +1,48 @@
+Definir uma função: 
+	function nomeFuncao(parametros){
+		instruções
+	}
+
+variáveis criadas dentro da função apenas podem ser utilizadas dentro dela
+
+return faz com que a função deixe de ser executada.
+
+Função anônima: (função sem nome)
+	funções que representam expressões
+	uma variável pode armazenar uma função
+
+	exemplo: 
+		const SOMA = function(a,b){
+			return a+b;
+		}
+
+Função autoinvocável (IIFE):
+	função anônima entre parênteses, seguida por outro par de parênteses, que representa sua chamada
+
+	exemplo:
+		(
+		   function() {
+			let name = "Felipe";
+			return name;
+		   }
+		)();
+
+
+		(
+		   function(a,b) {				podem conter parâmetros
+			return a+b;
+		   }
+		)(1,2);
+
+
+		
+		const SOMA3 = (
+		   function() {
+			return a+b;				armezada dentro de uma variável
+		   }
+		)(1,2);
+
+Callbacks:
+	uma função passada como argumento para outra função.
+
+	utilizando callbacks, tem o maior controle da ordem de chamadas		

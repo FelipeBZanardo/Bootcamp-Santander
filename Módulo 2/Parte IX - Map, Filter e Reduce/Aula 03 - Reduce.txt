@@ -1,0 +1,19 @@
+O que é?
+	Executa uma função em todos os elementos do array, retornando um valor único
+
+Sintaxe:
+ 	array.reduce(callbackFn, initialValue)
+
+	callbackFn: função a ser executada a partir do acumulador
+	initialValue: é opcional. Valor sobre o qual o retorno atual irá retornar
+
+Exemplo:
+	const callbackFn = function(accumulator, currentValue, index, array) {
+	}
+
+	array.reduce(callbackFn, initialValue)
+
+	accumulator: acumulador de todas as chamadas de callbackFn
+	currentValue: elemento atual sendo acessado pela função
+
+https://drive.google.com/file/d/1vlOkvUstzKgzaAlEMX7WMTXTNhKVqSZM/view?usp=sharing

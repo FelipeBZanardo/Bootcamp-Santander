@@ -1,0 +1,10 @@
+Objeto Error:
+	new Error(message, fileName, lineNumber)		todos esses parâmetros são opcionais. fileName e lineNumber podem não funcionar em alguns navegadores
+
+	Exemplo:
+		const meuErro = new Error('Mensagem inválida');			cria uma instância do objeto error
+		meuErro.name = 'InvalidMessage';				nome do erro
+		throw meuErro;							mensagem de erro
+
+
+	

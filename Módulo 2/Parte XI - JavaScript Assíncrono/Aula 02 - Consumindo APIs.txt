@@ -1,0 +1,19 @@
+API - Application Programming Interface
+
+	Uma API é uma forma de intermediar os resultados do back-end com o que é apresentao no front-end
+
+	Você consegue acessá-la por meio de urls
+
+JSON: JavaScript Object Notation
+
+	É muito importante que APIs retornem seus dados no formato .jason, portanto
+	precisamos tratar esses dados quando os recebermos.
+
+fetch:
+
+	fetch(url, options)
+		.then(response => response.json())
+		.then(json => console.log(json))
+
+	retorna uma promise
+

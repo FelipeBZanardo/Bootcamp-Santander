@@ -1,0 +1,18 @@
+Arrow function:
+ 
+Reperesenta pela =>
+
+const HELLO_WORLD = function(){
+	return "Hello World";}
+
+const HELLO_WORLD = () =>
+	{return "Hello World";} 
+
+const HELLO_WORLD = () => "Hello World";
+
+- caso exista apenas uma linha, pode dispensar as chaves e o return
+- caso exista apenas um parâmetro, pode dispensar os parênteses
+- arrow function não faz hoisting
+- numa arrow function this sempre será o objeto global. Não funcionam os métodos, call,apply...
+- não existe o objeto "arguments"
+- o construtor new também não pode ser utilizado

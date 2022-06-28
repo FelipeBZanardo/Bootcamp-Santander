@@ -1,0 +1,30 @@
+Valores padrão:
+	Formato após EcmaScript 2015
+	function nomeFuncao(a,b=1){				o valor padrão é 1, ou seja, se não for passado um valor para b, esse valor será 1
+	}
+
+Objeto "arguments": 
+	é um array com todos os parâmetros passados quando a função foi invocada
+
+	function nomeFuncao(a,b,c,...){
+	}
+
+	arguments = [a,b,c,...]
+	arguments[0] = a
+
+Arrays:
+	Spread: uma forma de lidar separadamente com elementos
+
+		numbers = [1,2,3]
+
+		para usar cada elemento: ...numbers				os 3 pontos (...) representa o spread
+
+
+	Rest: combina os argumentos em um array
+	O que era um elemento independente se torna parte de um array
+
+		também é representado pelos 3 pontos (...)
+
+
+Objetos:
+	Object Destructuring: entre chaves {}, podemos filtrar apenas os dados que interessam desse objeto

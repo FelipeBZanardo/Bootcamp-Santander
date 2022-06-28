@@ -1,0 +1,14 @@
+ECMAScript Error:
+	erros que ocorrem em tempo de execução
+	se faltou declarar uma variável, um ponto ou algo similar
+
+	Composto por:
+		- mensagem
+		- nome (do erro)
+		- linha
+		- Call Stack(pilha de chamada até o erro)
+
+DOMException:
+	DOM - Document Object Model - relacionamento do js com a página na web(html)
+
+	Erros relacionados ao DOM, ou seja, erros relacionados a uma página na web

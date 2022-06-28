@@ -1,0 +1,20 @@
+Throw:
+	se utilizado o return, a saída vai ser uma string
+	se utilizado throw, essa mesma string retornará como uma mensagem de erro
+
+Try...catch:
+
+	try: colocar o código para verificar se há erro.
+	caso ocorra erro, esse erro será tratado no bloco catch
+
+	exemplo:
+		try {
+			verificaPalindromo(string)
+		}
+		catch(e){
+			console.log(e)
+			throw e;
+		}
+
+Finally:
+	instrução executada exitindo erro ou não em try

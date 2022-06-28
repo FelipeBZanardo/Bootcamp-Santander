@@ -1,0 +1,40 @@
+This: 
+ 	é uma palavra reservada.
+	é uma referência de contexto
+
+	quando utilizado dentro de um objeto, this refere-se ao próprio obejto
+
+	Contexto				Referência
+	Em um objeto(método)			próprio objeto dono do método
+	Sozinha					objeto global(em navegadores, window)
+	Função					objeto global
+	Evento					elemento que recebeu o evento
+
+
+	Call:
+		atribui um nome(pode ser função ou um objeto,...) para a plavra this
+
+		const pessoa = {
+			nome: "Miguel"
+		};
+
+		const animal = {
+			nome: "Murphy"
+		};
+
+		function getSomething(){
+			console.log(this.nome)
+		}
+
+		getSomething.call(animal)			this vai se referir a animal
+
+
+	Apply:
+		semelhante ao call
+		a diferença está na passagem de argumentos. No apply, deve-se utilizar de arrays, no call, os argumentos são passados separadamente
+
+
+	Bind: 
+		clona a estrutura da função onde é chamada e aplica o valor do objeto pasado como parâmetro
+
+		

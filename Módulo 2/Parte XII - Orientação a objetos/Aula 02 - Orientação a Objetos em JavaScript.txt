@@ -1,0 +1,25 @@
+OOJS - Objeto Orientado a JavaScript
+
+Protótipos:
+	Todos os objetos JS herdam propriedades e métodos de um prototype.
+	O objeto Object.prototype está no topo desta cadeia
+
+Classes:
+	Styntatic sugar: uma sintaxe feita para facilitar a escrita
+	Classes em JS não existem nativamente. Todas as classes são objetos e a herança se dá por protótipos
+
+	- Construtor: constructor(parâmetros)
+		constrói a classe e passa parâmetros para valores dentro da classe
+
+	- getter:
+		retorna conteúdos dentro da classe
+
+	 - setter:
+		atribui valores dentro da classe
+
+	- super():
+		manda os valores para o objeto pai
+		herança
+
+	- métodos:
+		pode sobreescreber métodos dentro da classe filha

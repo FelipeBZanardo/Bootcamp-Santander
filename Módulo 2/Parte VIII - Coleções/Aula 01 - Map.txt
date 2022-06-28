@@ -1,0 +1,24 @@
+Estrutura:
+	const myMap = new Map()
+
+
+Características:
+	- Uma coleção de arrays no formato [chave,valor]
+	- Pode ser iterado por um loop for...of
+
+Métodos:
+
+myMap.set('apple', 'fruit');			set adiciona elementos. Sempre utilizar a chave
+myMap.get("apple");				retorna o valor da chave				
+myMap.delete("apple");				delete exclui elementos. Sempre utilizar a chave
+
+
+chave é "apple" e valor é "fruit"
+
+Map x Objeto:
+
+	- Maps podem ter chaves de qualquer tipo, enquanto objeto apenas de strings
+	- Maps possuem a propriedade length;
+	- Maps são mais fáceis de iterar, justamente por posuir o parâmetro length;
+	- Utilizado quando o valor das chaves é desconhecido;
+	- Os valores tem o mesmo tipo no Map, nos Obejtos podem ser diferentes.

@@ -1,0 +1,76 @@
+if:
+
+	if (condição){
+		declaração1;
+	} else {
+		declaração2;
+	}
+
+	NÃO EXISTE elsif em JS!
+
+Switch:
+	- equivale a uma comparação de tipo e valor(===)
+	- sempre precisa de um valor "default"
+	- ideal para quando se precisa comparar muitos valores
+
+	switch(id) {
+		case 1:
+			return "cão";
+		case 2:
+			return "gato";
+		case 3:
+			return "pássaro";
+		default:
+			return "peixe";
+		}
+
+For: 
+	loop dentro de elementos iteráveis(arrays, strings)
+
+	for (let i = 0 ; i < 10; i++){
+	}
+
+
+For ... in:
+	loop entre propriedades enumeráveis de um objeto
+
+	for(variavel in obj) {
+	}
+
+	exemplo:
+		obj = {
+			nome: "Felipe",
+			idade: 28,
+			cidade: "São Paulo"
+			}
+
+		for (k in obj) {
+			console.log(k)}
+
+		resultado: nome					mostra as keys do objeto
+			   idade
+			   cidade
+
+ For ... of:
+	loop entre estruturas iteráveis (arrays, strings)
+
+	for (variavel of array/string){}
+
+	desse jeito, percorre casa letra de uma palavra sem precisar utlizar índice
+	
+
+while : 
+	executa instruções até que a condição se torne falsa
+
+	while (num <= 5){
+		num++;
+	}
+
+
+do ... while:
+	executa instruções até que a condição se torne falsa.
+	A primeira instrução sempre ocorre
+
+	do {
+		num++;
+	} while(num <= 5)

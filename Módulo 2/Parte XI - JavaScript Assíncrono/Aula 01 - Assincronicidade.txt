@@ -1,0 +1,28 @@
+Assíncrono: 
+	Que não ocorre ou não se efetiva ao mesmo tempo.
+
+Por padrão JS roda de maneira síncrona
+
+Promises:
+	Objeto de processamento assíncrono
+	Inicialmente, seu valor é desconhecido. Ela pode, então, ser resolvida ou rejeitada
+
+	Um promise pode ter 3 estados:
+		1) Pending	pendente
+		2) Fulfilled	completado
+		3) Rejected	rejeitado
+
+	Estrutura:
+		const myPromise = new Promise((resolve, reject) =>{
+			window.setTimeout(() => {
+				resolve(console.log('Resolvida!'));
+			}, 2000);
+		});
+
+Async:
+	utilizada para definir funções assíncronas.
+	async function
+
+await: caso a promise seja resolvida, roda outra parte do código
+
+O resultado de uma promise será outra promise

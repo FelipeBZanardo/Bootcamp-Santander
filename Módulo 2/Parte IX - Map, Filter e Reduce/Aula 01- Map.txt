@@ -1,0 +1,26 @@
+O que é?
+	é quando um conjuto passa por uma operação(mapping function) e se torna outro conjunto
+
+Características da map:
+	- cria um novo array
+	- não modifica o array original
+	- esse método realiza as operações em ordem
+
+Sintaxe:
+
+	array.map(callback, thisArg)
+		callback(item, index, array)			item, index e array são opcionais
+
+	callback: função a ser executada em cada elemento
+	thisArg: É opcional. Valor de this dentro da função de callback 
+
+Map x for Each:
+	- valor de retorno
+	- Considerar se o array auxiliar será necessário
+
+	array.map((item) => item * 2); 
+
+
+https://drive.google.com/file/d/1r3iLxdBMyl3ko4WwKA-4QphHDFJ38jUd/view?usp=sharing
+
+https://drive.google.com/file/d/1e36EcBtMj-aAOU2K0sk1SxB_gROxizjM/view?usp=sharing

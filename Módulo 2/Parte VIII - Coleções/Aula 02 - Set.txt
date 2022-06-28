@@ -1,0 +1,16 @@
+Estrutura:
+	
+	const myArray = [1,1,2,2,3,4,5,6,7,8,2,1];
+	const mySet = new Set(myArray);
+
+	Sets são estruturas que armazenam apenas valores únicos, array pode ter valores repetidos.
+
+Métodos:
+	mySet.add(1);			adiciona valores
+	mySet.has(1);			retorna true se o valor procurado pertence ao Set
+	mySet.delete(1);		deleta valores;
+
+Set x Array:
+	- Possui valores únicos;
+	- Em vez da propriedade length, consulta-se o número de registros pela propriedade size;
+	- Não possui os métodos map, filter, reduce e etc. Todos esses são métodos de um array
