@@ -1,0 +1,37 @@
+Eventos: Ação que o usuário faz numa página da web
+
+Tipos de eventos:
+	- eventos do mouse:
+		- mouseover: passar o mouse por cima do elemento
+		- mouseout: quando o mouse sai do elemento
+	
+	- eventos de clique:
+		- click: um clique
+		- dbclick: clique duplo
+
+	- eventos de atualização:
+		- change: 
+		- load: assim que a página terminou de carregar, faça algo
+
+Acionar eventos:
+	- Event listener:
+		Diretamente no JS, cria um evento que vai ser acionado 
+		no momento em que o usuário relaizar determinada ação.
+	
+		const botao = document.getElementById('meuBotao');
+	
+		botao.addEventListener('click', outraFuncao);
+
+	- Atributo HTML:
+		Especifica a função a ser chamada diretamente no elemento HTML
+
+		<h1 onclick="mudaTexto(this)">Clique aqui!</h1>
+
+		<script>
+			function mudaTexto(id){
+				id.innerHTML = "Mudei!";
+			}
+		</script>
+
+
+		Para usar no html, usar onclick, ondbclick e etc...

@@ -1,0 +1,21 @@
+Métodos para selecionar elementos:
+
+	Estrutura html:
+		- tag: document.getElementsByTagName('nomeTag');
+			document.getElementsByTagName('nomeTag')[0];		primeiro elemento
+		- class: document.getElementsByClassName('nomeClasse');
+		- id: document.getElementById('nomeId');
+
+
+	Usando querySelector:
+		- document.querySelectorAll('.nomeClasse');
+		- document.querySelectorAll('#nomeID');
+
+		Vantagens: dá para combinar classes na procura e selecioná-las
+
+
+		Método						Descrição
+	document.createElement(element)			Cria um novo elemento HTML
+	document.removeChild(element)			Remove um elemento
+	document.appendChild(element)			Adiciona um elemento
+	document.replaceChild(new, old)			Substitui um elemento

@@ -1,0 +1,53 @@
+Módulos são arquivos JS que tem a capacidade de exportar e importar informações de outros arquivos do mesmo tipo.
+
+Vantagens:
+	- Organização do código
+	- Compartilhamento de variáveis em escopos diferentes 
+	- Explicita as dependências dos arquivos
+
+Exportar:
+	1) Named exports: exporta mais de uma função de um arquivo de forma individual
+		a) export function nomeFuncao{
+			}
+
+		b) function nomeFuncao{
+			}
+		   export {
+			   nomeFuncao
+			}
+
+	2) Default exports: 
+		- só pode haver um por arquivo
+		- será o retorno padrão do seu arquivo
+
+		export default nomeFuncao
+
+Importar:
+	1) Named exports:
+		import {funcao, variavel, classe} from './caminho.js'
+
+	2) Default exports:
+		import valorDefault from './caminho.js'						sempre iniciar o caminho com ./ 
+
+	3) Importar com apelido:
+		import {arquivo as Apelido} from './caminho.js'
+
+		Apelido.metodo();
+
+	4) Importar todos os dados de um arquivo:
+		import * as INFOS from './caminho.js';
+		INFOS.metodo();
+		
+
+Vincular ao HTML:
+	<script type="module" src='caminho.js'></script>
+
+	Para fazer testes localmente (de um arquivo no seu computador), será necessário estar rodando um servidor.
+	Isso pode ser feito utilizando a extensão "Live Server" do VSCODE.
+
+Curiosidades:
+	- Módulos sempre estão em "strict mode" 
+	- Podem ser utlizadas as extensões .js e .mjs
+	- Para testes locais, é necessário utilizar um servidor
+	- Ao importar, sempre lembre da extensão (.js, .mjs)
+	- Ao importar, sempre utilize './' como ponto de partida

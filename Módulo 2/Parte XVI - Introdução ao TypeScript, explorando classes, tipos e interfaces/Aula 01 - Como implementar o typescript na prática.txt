@@ -1,0 +1,71 @@
+TypeScript é uma extensão do JavaScript.
+Adiciona checagem de tipos,além de outras características que não existem previamente no JS
+
+
+terminal:
+ 	- npm init
+	- avançar todas as etapas
+	- npm i parcel-bundler
+
+vantagens: 
+	- tipar os parâmetros, ou seja, atribuir tipos as variáveis
+	- interfaces disponíveis: interfaces definem contratos de estruturas de dados ou de uma classe
+	- auto completar ao adicionar os dados
+
+	types: juntar diferentes interfaces ou definir que uma variável pode ser uma interface
+
+
+
+document.getElementById('input') as HTMLInputElement;
+
+
+Generic types:
+
+	function nomeFuncao<Tipo>(arg: Tipo)
+
+	por padrão, quando não se sabe o tipo, utilizar T
+
+
+-------------------------------------------------------------------------------------------
+interface IUsuario {
+    id: string;
+    email: string;
+}
+
+interface IAdmin extends IUsuario{
+    cargo: 'gerente' | 'coordenador' | 'supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin){
+    if('cargo' in usuario){
+        //redirecionar para a área de administração
+    }
+    // redirecionar para a área de usuário
+
+-------------------------------------------------------------------------------------------
+interface IUsuario {
+    id: string;
+    email: string;
+    cargo?: 'funcionário' | 'gerente' | 'coordenador' | 'supervisor';						?cargo é um parâmetro opcional, pode ou não ser passado
+}
+
+
+
+function redirecione(usuario: IUsuario){
+    if (usuario.cargo){
+        //redirecionar(usuario, cargo)
+    }
+    //redirecionar para a área do usuário
+}
+----------------------------------------------------------------------------------------------
+arquivo de typings:
+	typings.d.ts
+
+	Se criar interfaces com o mesmo nome, todas as propriedades serão concatenadas
+
+----------------------------------------------------------------------------------------------
+
+Omit:
+	para omitir alguma propriedade de uma interface, por exemplo
+
+Omit<nomeInterface , 'propriedadeASerOmitida'>
