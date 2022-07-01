@@ -1,0 +1,47 @@
+O que é Typescript?
+	- Superset do JavaScript
+		- Linguagem construída por cima do JS
+		- Adiciona features à linguagem original
+		- Compila para JS
+
+Por que usar TS?
+	- Adiciona definição estática de tipos:
+		- Funcionalidades do código mais explíticas
+		- maior segurança durante o desenvolvimento
+		- detecta erros durante a compilação que só seriam percebidos em execução
+	- Compila um JS mais resiliente
+	- Ajuda a desenvolver boas práticas de programação.
+
+
+No VsCode:
+	- npm init
+		-manter as configurações padrão
+	- npm install typescript
+	- npm install lite-server
+
+	- npm start
+
+	- tsc --init
+	- npm run watch
+
+Setup do ambiente:
+	- Projeto Node:
+		- instalar o Node
+		- abrir a pasta do projeto com o terminal
+		- inserir npm init
+		- confirmar todas as configurações
+	- TypeScript:
+		- npm install -g typescript		instalar globalmente
+		- npm install typescript
+
+Repositório:
+	- Contém um readme com dicas de TS
+	- Commits feitos com cuidado para explicar o uso da ferramenta
+	- Documentação com exemplos de uso
+	- Exercícios
+	- https://github.com/lira1705/mentoria-typescript
+
+
+enum : grupo de constantes
+
+never: tipo nunca finalizado. Encerrado no meio. Utilizado com mensagens de erro (trhow
