@@ -1,0 +1,37 @@
+Classe de serviço:
+	são métodos que façam ou chamem outra operação, no máximo variáveis estáticas que não alteram seu valor
+	vantagem:
+		cria uma instância para todos os objetos
+		esse objetos só tem uma funçao
+
+Para tornar uma classe elegível para injeção dependência:
+	@Injectable({
+    		providedIn: 'root'
+		})
+-----------------------------------------------------------------
+Pipes nativos do angular:
+	é possível de usar mais de um pipe na mesma propriedade
+
+ - | date: "dd/MM/yyyy"			datas
+	
+ - | lowercase				letras minúsculas
+
+
+Pipe customizado:
+	- criar uma pasta "pipe"
+	- criar um arquivo "replace.pipe.ts"
+	- @Pipe
+------------------------------------------------------------------
+Rotas:
+
+Navegar entre os componentes
+
+Para navegar usando rotas, deve-se deixar de utilizar o selector(que gera uma tag para ser utilizada no html)
+
+
+Para fazer o switch do component de rotas:[
+	<rooter-outlet></rooter-outlet>
+
+
+path: ''		refere-se a raíz da aplicação
+path: '**'		quando não encontrada a rota, redirecionar por aqui

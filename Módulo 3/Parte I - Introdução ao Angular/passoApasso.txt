@@ -1,0 +1,45 @@
+- Dentro da pasta app criar a pasta 'cousers'
+- Dentro da pasta cousers criar um arquivo: 'course-list.component.ts'
+- No arquivo escrever:
+
+	import { Component } from "@angular/core";
+
+	@Component({
+    	selector: 'app-course-list',
+    	template: '<h2> Course List </h2>'
+	})
+	export class CourseListComponent{
+
+	}
+
+- No arquivo component.html:
+ 	usar a tag criada em selector
+
+	<app-course-list></app-course-list>
+
+- Para a tag poder ser utilizada, entrar no arquivo app.module.ts e acrescentar o nome da class CourseListComponent em declarations
+
+- Ao invés de usar um template estático, usar um arquivo html.
+	- criar um arquivo com o mesmo nome e extensão html. 	course-list.component.html			POR RECOMENDAÇÃO UTILIZAR ESTE MÉTODO
+
+- No arquivo course-list.component.ts trocar o template por:
+	templateUrl: './course-list.component.html'
+
+- instalar o bootstrap para deixar o visual da aplicação mais bonito:
+	npm install bootstrap
+
+	Para verificar se foi instalado corretamente basta procurar na pasta mode-modules o arquivo bootstrap
+
+- entrar no arquivo angular.json arquivo que contém as configurações globais:
+	
+- verificar qual o arquivo que contém o estilo do projeto em "styles" e acessar esse arquivo
+
+- Nesse arquivo(styles.css) importar o bootstrap:
+	@import '~bootstrap/dist/css/bootstrap.main.css'
+
+- ng serve (tem que ser na pasta course-manager)
+
+- verificar se houve alterações
+
+- criar um arquivo course.ts em cousers
+

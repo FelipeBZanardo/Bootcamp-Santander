@@ -1,0 +1,73 @@
+npm install -g @angular/cli
+
+- abrir o vs code na pasta do projeto
+- ng new course-manager
+- n
+- escolher css
+- esperar instalar
+- abrir terminal no manager-course
+- ng serve
+- abrir navegador
+- http://localhost:4200/
+
+package.json: contém todas as dependências da aplicação
+
+angular.json: informações globais da aplicação. Define propriedades ou funções de iniciação
+	- assets: representa a parte estática da aplicação, por exemplo, imagens
+	- styles: define os estilos globais da aplicação
+	- index: página base da aplicação. Faz o spa
+	- main: responsável pelo boot strap da aplicação, ou seja, iniciar a aplicação
+
+pasta node.modules:contém todas as dependencias da aplicação
+
+pasta src: pasta raíz da aplicação
+	- main.ts: inicia a aplicação. Boot strap. Espera receber o módulo raíz para inicar a aplicação
+	- styles.css: estilo de toda a aplicação. estilo global
+	- assets: toda parte estática da aplicação e é definida no arquivo angular.json
+
+pasta app: 
+	- app.module: faz a leitura do componente pai. 
+		Esse compontente pai é responsável por envelopar todos os componentes criados,
+		podendo ser de maneira direta ou indireta, ou seja, esse componente será lido e carregado pra
+		dentro do index.html
+		app-root: todos os componentes serão carregados. Faz referência ao componente pai, o app-component, que é lido dentro do app-module
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O Angular é modular, ou seja, mesmo que não crie nenhum módulo, existe o módulo raíz que engloba todos os componentes de forma direta ou indireta
+
+Módulo: 
+	é um limitador de contexto, contendo uma série de componentes intrinsicos ao módulo
+
+Componentes: 
+	dão estrutura, aparência e vida ao módulo
+
+Na pasta app - app.component.ts:
+	@Component: é um decorator, propriedades que dão mais informações ao compontente, trazendo funcionalidades a mais
+		- templateUrl: html usado para representar a parte visual
+		- selector: cria uma tag, se encontra no body do html em app-root
+
+
+{{title}} - é uma interpolação
+
+Angular fortalece o html, assim como TS fortalece o JS
+
+
+em app-module:
+	- import { FormsModule } from '@angular/forms';			para utlizar [ngModel]
+
+[ngModel]  só entre colchetes é um one way data binding: só exibe, não altera o valor da propriedade
+
+[(ngModel)] two way data binding: 2 vias, exibe e altera o valor
+
+{{ title }}
+
+<br/>
+
+{{ name }}
+
+<br/>
+
+<input type="text" [(ngModel)]="name" name="name" /> 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+para mesclar um tributo da tag html com uma informação do angular(ts) usar entre colchetes.... [src]

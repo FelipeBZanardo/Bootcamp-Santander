@@ -1,0 +1,15 @@
+- abrir na pasta servers
+- npm install
+- node serve.js
+
+
+pasta shared: 
+	- contém componetes e módulos bem pequenos que são bem compartilhados, ou seja, genéricos
+
+pasta core:
+	- contém componentes mais pesados
+	- não são tão genéricos
+
+
+módulos:
+	- segregar responsabilidades
