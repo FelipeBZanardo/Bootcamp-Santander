@@ -1,0 +1,58 @@
+Estrutura:
+	
+- e2e: responsável por testes End-To-End no Angular.A partir da versão 12 não existe mais essa pasta
+
+- node_modules: responsável por armazenar as dependências(e subdependências) e pacotes do projeto
+
+- src: diretório da aplicação, onde nós criamos os nossos módulos, componentes,
+	rotas, serviços e tudo que fizer parte da aplicação
+
+- browserlistrc: usado pelo sistema de build para ajustar a saída
+	CSS e JS para suportar os navegadores listados
+
+- .editorconfig: configurações do editor de código 
+
+- .gitignore: arquivo do git que utilizamos para o gerenciamento dos
+	arquivos que serão ignorados no momento do commit
+
+	O GIT não deve versionar a pasta node_module, já que este diretório roda no servidor local
+
+- angular.json: arquivo de configuração do angular
+
+- karma.config.js: configurações do Karma(framework para teste unitário) para teste unitário
+
+- package-lock.json: lista de dependências e sub-dependências
+
+- README.md - Arquivo Markdown para documentação da aplicação
+
+- tsconfig e tslint: arquivos de configuração do TS
+
+-----------------------------------------------------------------------------------------------------------------------
+Comandos Angular CLI:
+
+	ng g component NomeComponente
+
+	ng g direvtive NomeDiretiva
+
+https://github.com/ivosoares/ambiente-angular
+
+	ng g pipe NomePipe
+
+	ng g service NomeService
+
+	ng g class NomeClasse
+
+	ng g guard NomeGuard
+
+	ng g interface NomeInterface
+
+	ng g enum NomeEnum
+	
+	ng g module NomeModulo
+
+	ng add NomeBiblioteca
+----------------------------------------------------------------------------------------------------------------------
+
+	ng build
+
+	entrar no site netlify

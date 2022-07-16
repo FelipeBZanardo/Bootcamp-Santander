@@ -1,0 +1,31 @@
+Angular: 
+	é um framework criado pelo google focado na criação de aplicativos de página única eficientes e sofisticados
+
+Angular 1/JS : manipulação do DOM(árvore de elementos do html) de forma dinâmica
+
+Angular 2+: reformulado desde o 0. Atualmente na versão 12
+
+	- Módulos: cada módulo cuida de um componente, por exemplo. Responsável pelo gerenciamento de tudo(serviços, componetes, etc...)
+	- Componentes: componentes genéricos preferencialmente
+	- Template: toda parte estrutural...html e css
+	- Diretivas: fazer um if ou um for dentro do html. Códigos que aplicam mudanças no template
+	- Serviços: ferramenta externa, por exemplo, um banco de dados
+	- Injeção de dependência: meio pelo qual são injetados os serviços no component
+	- Data-Binding: trocar dados entre template e lógica e vice-versa
+		Property Binding: do component para o template
+		Event Binding: do template para o component
+	- Roteamento: troca de páginas, mesmo trabalhando em uma página só
+	- Metadata: dados transitados entre template e componente
+
+Angular é um framework JavaScript, porém é utilizado um superset do JS que é o TypeScript
+
+Página SPA - Single Page Application: Aplicação em uma única página(um único arquivo html)
+
+Angular CLI - Interface de Linhas de Comandos - roda no terminal. Auxilia a criação de projetos Angular
+
+npm - package manager - gerenciador de pacotes
+
+npm install -g @angular/cli
+ng new my-first-project
+cd my-first-project
+ng serve
