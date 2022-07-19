@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------------------------------------------
+Casting:
+--------------------------------------------------------------------------------------------------------------------
+"É a transformação de uma determinada variável de tipo menos específico para um tipo mais específico ou vice-versa."
+
+--------------------------------------------------------------------------------------------------------------------
+Tipos:
+--------------------------------------------------------------------------------------------------------------------
+- upcast(implícito) - de uma variável cujo o tipo tem menos capacidade para uma que tem mais 
+- downcast(explícito) - de maior capacidade de armazenamento para uma menor
+
+pode ser feito em tipos primitivos e também compostos(objetos)
+
+--------------------------------------------------------------------------------------------------------------------
+Exemplos:
+--------------------------------------------------------------------------------------------------------------------
+- long l; int i; l = i;
+- int i; long l; i = (int) l;
+- double d; float f = 10.5f; d = f;
+- float f; double d = 10.5d; f = (float) d;
+- int i; float f = 10.5f; i = (int) f;

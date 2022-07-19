@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------------------------------------------
+Variável:
+-------------------------------------------------------------------------------------------------------------------- 
+"Um espaço na memória do computador, onde se pode guardar valores."
+
+Existem 4 tipos:
+- Instância: objeto - POO
+- Classe: classe - POO
+- Local: dentro de métodos
+- Parâmetro: na assinatura do método
+
+--------------------------------------------------------------------------------------------------------------------
+Criação:
+--------------------------------------------------------------------------------------------------------------------
+
+<?visibilidade><?modificador>tipo nome<?=valorinicial>
+
+V: public, protected e private
+M: static e final(constante)
+T: tipo de dado				é obrigatório, pois Java é fortemente tipado
+N: nome que é fornecido a variável
+VI: um valor inicial, caso deseje
+
+Convenções e regras:
+- não devem começar com números
+- embora permitido, $ e _ devem ser evitados
+- São case-sensitive (diferencia maiúsculas e minúsculas)
+- sem espaços
+- não pode usar palavras reservadas do Java
+
+Boas práticas:
+- sempre começar com a letra minúscula
+- nomes expressivos
+- notação camelo;
+- quando constante(final), deve ser maiúscula e separada por _
