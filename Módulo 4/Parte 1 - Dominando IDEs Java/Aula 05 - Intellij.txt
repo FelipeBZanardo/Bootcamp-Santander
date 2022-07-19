@@ -1,0 +1,23 @@
+alt + insert: inserir class ou package
+
+ctrl + shift + f10 : compilar pela primeira vez
+
+ctrl + f10: rodar o programa
+
+ctrl + shif + /: comentar um bloco selecionado
+
+ctrl + y : apagar linha
+
+shift + f6: refatorar uma classe
+
+shift + f12: expandir a tela
+
+ctrl + alt + l: arrumar identação
+
+ctrl + d: duplicar linha
+
+ctrl + shift + seta: mover linha
+
+ctrl + f4: fechar aba
+
+ctrl + b: entra na classe selecionada

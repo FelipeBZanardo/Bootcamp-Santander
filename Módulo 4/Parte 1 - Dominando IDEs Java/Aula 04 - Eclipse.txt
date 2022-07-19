@@ -1,0 +1,25 @@
+Ctrl + 3: escolher a perspectiva de trabalho(digite para encontrar) - Java, Debug ou Git
+
+Ir no package e clicar f2 para mudar o nome do pacote
+
+Ctrl + n : criar uma nova class
+
+Ctrl + m: expande a tela
+
+ctrl + d: apaga a linha
+
+mudar o bloco de lugar: selecionar o bloco, alt + setas para mover
+
+crtl + shift + f: arruma identação
+
+ctrl + shift + o: importar a classe
+
+f8 - resume - no modo debug roda o código até o final
+
+f6 - próxima linha do código - debug
+
+f5 - entra no método
+
+ctrl + w : fecha a aba atual
+
+ctrl + shift + w : fecha todas as abas
