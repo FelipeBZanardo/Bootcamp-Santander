@@ -1,0 +1,109 @@
+https://github.com/cahferreira93/SPA-Angular
+
+Agular é um framework que possibilita construir aplicações Web baseadas em HTML5, CSS e JS
+
+Permite organizar essas tecnologias e entregar uma aplicação que executa no Browser,
+capaz de consumir um ou vários serviçõs disponibilizados por um servidor.
+
+- Angular surgiu para apps simples
+- Angular JS = Angular 1
+- Angular = A partir do Angular 2
+
+Benefícios do Angular:
+	- Mais aderente a padrões
+	- Trabalha com ideia de classes
+	- Qualquer propriedade do DOM pode receber um valor dinamicamente 
+	sem a necessidade de criar diretivas
+
+SPA: Single Page Application:
+	- utiliza templates
+	- são adicionados novos componentes na página
+
+Tradicional Web Application:
+	- rotas mudam de páginas
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+CONHECENDO OS DIRETÓRIOS
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+- node_modules: estão todos os pacotes e dependências que o Angular npm baixou e instalou na aplicação
+
+- app: ficam basicamente todos os components e arquivos de módulo
+
+- src: estrutura inicial
+
+- assets: arquivos de estilos comuns para toda a aplicação
+
+- enviroments: ajuda a criar diferentes ambientes para que a aplicação tenha um comportameno único em cada um deles, facilitando no deplay do código
+
+- package.json: estão todas as dependências do projeto
+
+- app.module.ts: é o modo raíz da aplicação. Sempre que criarmos ou pegarmos um já existente(angular material, por exemplo) um novo component, 
+	precisamos adicioná-lo neste arquivo
+
+- app.component.html: é o arquivo da página inicial do angular. Utilizada para criar um novo projeto
+
+- app-routing.module.ts: é responsável por mapear as rotas, mostrando qual arquivo deve abrir
+
+- app.component.css: define o estilo que será aplicado para o component em específico
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+DATA BINDING
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+é uma forma de associarmos informações que estão no component para o template e vice versa
+
+Interpolação:
+	recurso de embedar expressões dentro de uma área delimitada por {{}}.
+	Dentro dessa área podemos trazer variáveis e métodos do nosso TS, realizar
+	cálculos matemáticos, e também realizar operações lógicas
+	
+	{{ valor }}
+	associa informação do component para o template(html)
+
+Property Binding:
+	[propriedade] = "valor"
+	associa informação do component para o template(html)
+
+Event binding:
+	(evento) = "handler"
+	associa informação do template(html) para o component
+
+Two-Way Data Binding:
+	[(ngModel)]="propriedade"
+	associa informação entre ambos, ou seja, mantém ambos atualizados (component e template)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+DIRETIVAS
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+São marcadores em um elemento DOM que informam ao Angular para anexar um comportamento
+especificado a um elemento existente. Existem muitas diretivas prontas que podemos usar
+e também podemos criar nossas próprias diretivas
+
+ngIf:
+é uma diretiva que adicona a uma elemento na marcação, geralmente para um
+elemento do container como um div
+
+ngFor:
+é uma diretiva para processar cada item de um objeto iterável, gerando uma
+marcação pra cada um. É conhecida como uma diretiva estrutural, porque pode
+alterar o layout do DOM adicionando e removendo elementos DOM de visualização
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+EVENT EMITTER
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Input Property - @Input()
+usados para receber dados do component pai(app.module.ts)
+
+Output Property - @Output()
+Enviar dados de um component filho para um component pai
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+LIFE CYCLE HOOKS - ELEMENTOS DE CICLO DE VIDA
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Cada component no Angular possui um conjunto de LCH. Eles ocorrem quando o component
+é criado, modificado ou destruído
+
+Constructor:
+constrói tudo que precisa antes de inicar um component
+
+NgOnInit:
+chamado toda vez que iniciamos um component, facilitando assim a chamada
+de métodos que precisamos que sejam executados assim que o component for chamado

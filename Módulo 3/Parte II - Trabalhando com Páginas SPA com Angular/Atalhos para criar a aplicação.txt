@@ -1,0 +1,23 @@
+- instalar Node
+- node -v				verificar a versão do Node instalada
+
+- npm install -g @angular/cli		necessário para realizar o build da nossa aplicação, criando componentes, diretivas, pipes
+- ng v					verificar versão do Angular instalada
+
+- usar VSCODE
+
+- ng new NomePastaProjeto --prefix=spa
+- yes
+- css
+
+- abrir vscode na pasta da aplicação
+
+- ng serve -o				inicia o servidor. A cada mudança nos arquivos, ele constrói "rebuild"
+					-o é abreviação de --open, que abre o browser após a compilação
+					Tem que ser dentro de NomePastaProjeto
+
+- Ctrl+c Ctrl+c				parar a aplicação
+
+- ng add @angular/material		iniciar angular material
+
+- ng g c home				gerar um component com o nome home
