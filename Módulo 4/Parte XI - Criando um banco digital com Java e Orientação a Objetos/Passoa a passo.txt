@@ -1,0 +1,15 @@
+1) Criar o projeto no IntelliJ ou Eclipse
+2) criar 4 classes : Banco, ContaCorrente, ContaPoupanca, Cliente
+3) Criar atributos iniciais para cada classe:
+	Banco e cliente: nome
+	ContaCorrente e ContaPoupanca: agencia, numero e saldo
+4) Criar métodos iniciais para cada classe:
+	ContaCorrente e Conta Poupanca: sacar, depositar e transferir
+5) Criar get e set de Banco e Cliente: alt+insert 
+6) Criar apenas get das ContaPoupanca e ContaCorrente, já que não faz sentido setar os valores da agência, número da conta e saldo
+7) Criar uma classe Conta, já que a ContaPoupanca e ContaCorrente sao iguais. Com isso Conta será a classe Pai das duas
+8) Criar uma interface com os métodos da Conta 
+9) Implementar a Interface IConta na classe Conta
+10) Implementar os métodos da interface na classe Conta - Alt + insert
+11) tornar a classe Conta abstrata - public abstract class Conta
+
