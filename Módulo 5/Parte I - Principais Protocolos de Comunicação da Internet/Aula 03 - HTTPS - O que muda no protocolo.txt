@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------
+Segurança da informação:
+
+Criptografia por chave:
+mapea um texto legível para um não legível através de uma chave
+
+- Assimétrica:
+	- Chave privada: assinatura - criptografia
+	- chave pública: verificação de autentidade
+- simétrica:
+	- conhecimento prévio da chave
+	- como transferir a chave?
+		substituição da letra pel k-ésima do alfabeto - rotatividade do alfabeto
+
+tipos criptografia por chave:
+	- cifra de fluxo:
+		- sequência de bits pseudo-aleatório
+		- mapeamento 1 para 1
+	- cifra de bloco:
+		- bloco de bits
+		- mapeamento de 1 para 1
+		- na prática: k>64
+
+Certificado digital:
+	Entidade certificadora: Certification Authority - CA
+-verificar indentidade
+- emissão de certificados
+-----------------------------------------------------------------------
+Protocolo SSL - Secure Socket Layer
+
+- segurança para conexões tcp
+- Confidencialidade
+- integridade
+- autenticidade end-point
+
+tls - 3 versão ssl
+
+Operações do SSL
+- handshake: 
+	- estabelecimento conexão tcp
+	- verifica autencidade
+	- envio da master secret key
+
+- data transfer:
+	- trandferencia efetiva de dados
+	- record+Mac: verificação de integridade da mensagem
+
+HTTPS: HTTP + SSL:
+	- segurança na comunicação - http
+	- verificação da autenticidade por certificados digitais porta 443
+
+	proteção contra fishing e autencidade
+
+LGPD - Lei Geral de Proteção de Dados:
+	- dados de identificação dos usuários
+	- dados sensíveis: religião, etnia etc
+
+ANPD - Agência nacional de proteção de dados
+	- zela pela proteção de dados
+	- elabora diretrizes para política nacional de proteção
+	- promove conhcimentos das normas
+	- edita regulamentos
+	- realiza auditorias
+	

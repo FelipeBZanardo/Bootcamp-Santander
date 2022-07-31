@@ -1,0 +1,33 @@
+ problemas com http em web app:
+- conexões subjcentes
+- alto overhead
+- mapeamento via script
+
+WebSocket:
+- uma conexão bidirecional entre client e servidor
+- é um upgrade do http
+- ports: 80 e 443
+- voltada a aplicações em tempo real
+
+Como funciona o websocket:
+- handshake: duas vias, tornando a conexão mais rápida
+- data transfer: 
+
+
+"O protocolo websocket fornece comunicação cliente/servidor executando um código não confiável em um ambiente controlado para o host que escolheu essa comunicação"
+
+- apenas aceita json
+
+filosofia do websocket:
+1. Origin-base security model -restringe páginas web
+2. endereçamento e protocolo
+3. camadas -> enquadramento on top TCP
+4. Encerramento do handshake
+---------------------------------------------------------------
+Comunicação dentro da internet:
+
+DNS: Domain Name System
+
+Load Balancer: 
+- distribuição de carga
+- multiplexação

@@ -1,0 +1,270 @@
+Como funciona o protocolo HTTP:
+
+HTTP: HyperText Transfer Protocol - camada de aplicação
+
+- Definido pelos RFCs 1945 e 2116
+- Protocolo de comunicação
+- Browser -> implementa o cliente HTTP
+- Servidor -> host objetos web
+
+Determina como será a comunicação entre o servidor e o cliente
+
+Cliente: 
+	- Mensagens - Request HTTP - requesita objetos web
+
+Servidor :
+	- Mensagens - Response HTTP  - responde utilizando protocolo TCP
+
+TCP - protocolo presente na camada de transporte que dá controle de fluxo as informações
+
+Arquiteura Client-server
+Stateless - o servidor não mantém o estado do cliente
+
+1991 - primeira página web - http 0.9
+
+Tipos de mensagens HTTP: request e response
+
+Método Get -> acessar um site
+o servidor procura o site no banco de dados responde com uma mensagem http
+
+método post - envia um contéudo para o servidor, por exemplo um formulário
+servidor atualiza o banco de dados e responde se foi atualizado ou não
+
+XML - JSON -> formato de estruturação de dados das apis e aplicações web
+
+Armazenamento - Transmissão - Reconstrução
+
+Content-Type : application/json
+Accept: application/json
+
+Objetivos das extensões xml(Extensible Matkup Language) 
+- Serialização
+- Comunicação
+- Metadados
+
+Objetivos das extensões Json(JavaScript Object Notation)
+- Lightweight (mais legível)
+- indepnendente de linguagem de programação
+- possui estrutura de dicionário chave e valor
+
+Ambas extensões:
+- sao autodescritivos
+- hierárquicos
+- independentes de linguagem de programação
+- vasta utilização
+
+Diferenças:
+xml		json
+tags		chave/valor
+complexo	sucinto/simples
+
+Por qual optar?
+depende de:
+- tecnologia
+- Complexidade
+- aplicações leves - jSon
+- Metadados - xml
+------------------------------------------------------------
+Particularidades do http 1.1
+TCP - 
+persistente: mantém a comunicação ativa
+não persistente - encerra após terminar de responder a requisição
+
+browser permite ate´6 requisições http simultâneos
+
+---------------------------------------------------------------------
+Mensagens Http
+REquest:
+- escrito em Ascii
+- separado em dois blocos:
+	- request line:
+		- método + destino + versão
+	- header line:
+		- host: url
+		- Connection: close (não persistente)
+		- user-agent: browser/aplicaçãoJava
+		- accept: tipo de arquivo aceito
+		- Accept-language:fr
+		- accept-encoding
+
+
+métodos mais utilizados: 
+	- get (90% das aquisições utiliza o método get)
+	- post
+
+métodos:
+	- GET: solicita um recurso do servidor
+	- HEAD: GET sem corpo de resposta
+	- POST: submete uma entidade a um recurso
+	- PUT: substituição de recursos pelos dados da requisição
+	- DELETE: remoção de um recurso
+	- TRACE: chamada de loop-back a um determinado recurso- diagnóstico da rede
+	- OPTION: opções de comunicação com recurso
+	- CONNECT: tunelamento identificado pelo recurso
+	- PATCH: modificação parcial - RFC 5789
+
+métodos seguros: quando executados não modificam o estado do servidor (get, head, option)
+Operação de leitura(read-only). 
+são idempotentes: sempre obtém o mesmo resultado, mas nem todo é método seguro
+
+
+REsponse:
+dividido em:
+	- Status line:
+		- versão do protocolo + status code + status da mensagem
+	- header lines:
+		- Conexão encerrada
+		- Dados da mensagem: Data(importante para cash), servidor, ...
+		- Content-length: tamanho do conteúdo
+		- Content-type: tipo de dado
+	- entity body:
+		- data(dados)
+
+Satatus code:
+	- 200OK						request bem sucedida e objeto enviado
+	- 301 Moved Permanently				obejto realocado nova url no campo location
+	- 400 bad request				resposta genérica - servidor não entendeu a mensagem
+	- 404 not found					o documento solicitado é inesxixtente
+	- 505 http version not supported		versão do protocolo não suportada pelo servidor
+
+Classificação status code:
+	- Information response(100-199)
+	- Successful response(200-299)
+	- Redirection response(300-399)
+	- Client error response(400-499)
+	- Server error response(500-599)
+
+ 
+
+102 - Procesing
+207 - Multi-status
+208 - Already Reported
+422 - Unprocessable Entity
+423 - Locked
+424 - Failed Dependency
+
+WebDav : Web Distributed Authoring and Versioning
+
+- Webpage Meta: Add, deletar, retrieve
+- Link pages
+- Criação de conjunto de documentos
+- Copy e move
+- Lock: documento editado
+
+
+-------------------------------------------------------------------------------------------------------------------
+HTTP :  - Stateless
+	- Client/Server
+
+Cookies:
+Track
+pequenos pedaçõs ou blocos de dados criados e utilizados pelo servidor para persistir dados no dispositivo do cliente
+Especificação: RFC 6265
+- Estão no header file
+
+Dois tipos de cookies:
+	- Cookies de sessão: dados apagados depois que a sessaõ acaba
+	- Cookies persistentes: exemplo: quando mantém o login ativo
+
+Estrutura:
+- site
+- name
+- content
+- domain
+- path
+- send for
+- expires
+
+Exemplos: login ativo, informação de website e ecommerce
+
+---------------------------------------------------------------------------
+Caching:
+é um intermediário entre o cliente e o servidor (proxy server)
+contém informações sobre a página sem precisar utilizar o response com o server diretamente
+
+vantagens:
+	- redução do tempo de resposta
+	- redução do tráfego
+-------------------------------------------------------------------------------------
+Http 2.0
+
+falhas do http 1.1:
+- HOL: Head of Line Blocking: espera a resposta de uma requisição
+
+vantagens http 2.0:
+- várias requisões - multiplexação de canais
+- priorização de recursos através de pesos de prioridade
+- reutilização do header
+- segmentação - streaming
+
+Push: envia todos os dados já no get
+Não é habilitado por default
+
+Características do http 2.0:
+- única conexão persistente
+- compressão de header
+- server push
+- https por padrão - TLS
+- NEgociação no handshake
+
+Contras do http 2.0:
+push:
+	- configuração incorreta
+mixe 1.1 e 2.0:
+	- lentidão
+	- load balancer - http 1.1
+
+-----------------------------------------------------------------------------
+Servidores:
+-apache : mais utilizado
+- nginx
+- xampp
+
+apache:
+- masi utilizado em windows
+- 1995
+- contribuição com www
+- opensource e gratuito
+- comunidade : apache software foundation
+
+- modular, dinâmico e carregável
+- multiple request processing modes
+- altamente escalável (+10000 conexões simultâneas)
+- lida com arquivos estáticos, index, auto-indeing e negociação de conteúdo
+- tsl via openSSL ou wolfSSL
+- servidores virtuais com endereços baseados em IP ou nome
+- compatibilidade com ipv6
+- suporte à versão hhttp 2.0
+- proxy reverso, websocket
+
+xampp:(pacote/ambiente)
+- utilza o apache server
+- mariaDB
+- Interpretadores script - PHP/Perl
+- OpenSSL, phpMyAdmin, MediaWki, JOO mla, Wordpress
+
+- voltado a teste e desenvolvimento
+- sem acesso a intenert
+
+
+NGINX(servidor 2004):
+
+- web server
+- proxy reverso
+- load balancer
+- mail proxy
+- http cache
+
+- +10mil conexões simultâneas
+- lida com arquivos estáticos, index, auto-indexing
+- proxy reverso
+- load balance
+- tls/ssl com SNI via OpenSSL
+- Suporte à HTTP 2.0
+- compatível com ipv6
+- fastCGI, uWSGI com cache
+- suporte a gRPC(v 1.13.10)
+- servidores virtuais baseados em IP e nome
+- webSocket desde 1.3.13
+- URL rewriting and redirection
+
