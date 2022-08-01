@@ -1,0 +1,93 @@
+Problemas do Spring:
+- configurações de beans em arquivos xml
+- Dispatcher Servlet e view resolver em web.xml
+- Setup manual de Banco de Dados
+- Muito tempo gasto em configuração
+- Perda de foco e valor
+
+O que é Spring Boot?
+- criado pela Spring Source em 2012
+- facilita setup de projetos Spring
+- sem necessidade de criar arquivos de configuração
+- foco em produtividade
+- maior tempo no desenvolvimento de valor
+
+Quais os problemas resolve?
+- produtividade: setup simplificado de projeto
+	utiliza Spring Initializr: pode ser online ou direto na IDE
+
+- Starters: dependências auto configuráveis pelo SpringBoot
+
+- Execução simplificada: sem deploy em servidor externo
+
+- Configuração: arquivo externo para configuração
+	configurações de banco de dados, segurança, log
+	localizado no arquivo: application.properties - formato .properties ou xml
+
+- Valor: maior tempo em desenvolvimento
+
+Exercício:
+- criação de um projeto no site http://start.spring.io
+	- Project: Maven Project
+	- Language: Java
+	- Deixar setado como está
+	- Project Metadata:
+		- Group: com.digitalinovationone
+		- Artefact: springboot
+	- Dependências:
+		- Spring web
+	- clicar em generate
+	- descompactar o arquivo
+- importar o projeto no IntelliJ
+- adicionar spring-boot-starter-mvc no pom.xml
+- adicionar classe HelloController e o método hello()
+- Executar o projeto através do terminal
+	- abrir o terminal na pasta springboot
+	- mvn spring-boot:run
+----------------------------------------------------------------------------
+Configuração manual:
+	- múltiplos arquivos XML
+	- configuração manual do Spring MVC: Dispatcher Servlet, web.xml, spring-mvc.xml
+	- configuração manual dos beans Spring
+	- Aplicado também ao Spring Data, Spring Security, etc
+
+Auto configuration:
+	- Starters: dependências simplificadas e auto configuráveis
+	- identificação e configuração automática da dependência
+	- Spring boot detecta as dependências e configura para nós
+	- projeto simplificado e pronto para foco no valor
+
+Exercício:
+	- adicionar propriedade debug=true no application.properties
+	- executar projeto no terminal e analisar o log
+	- identificar e visualizar o auto configuration so spring mvc
+	- visualizar a dependência do auto configuration no projeto
+-----------------------------------------------------------------------------------------------
+Antes do Spring boot
+
+	- spring tradicional: war precisa de servidor de aplicação
+	- dependência de um container web ou servidor de aplicação
+	- complexidade para configurações
+	- atualizaçãoes frequentes, junto com versão do projeto
+	- gerenciamento manual de configurações
+
+FatJar/UberJAr:
+	- Artefato do projeto pronto para execução
+	- Container web embutido na geração e execução (Tomcat)
+	- Deploy embarcado com outros containers são opcionais
+	- dependências principais do projeto embarcado
+	- execução direta através de um único java-jar
+	- podemos também gerar o war tradicional
+
+Exercício:
+	- fazer o build do projeto
+	- explorar conteúdo do arquivo .jar gerado
+	- executar o projeto no terminal com java-jar
+	- trocar o formato do artefato para .war e executar no Tomcat
+
+		- mvn clean package
+		- entrar na pasta target/
+			- java -jar springboot.jar 
+			- jar tf springboot.jar | less 		mostra todo o conteúdo de .jar
+
+

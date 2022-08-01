@@ -1,0 +1,53 @@
+Importância dos Profiles
+
+Múltiplos ambientes:
+	- ambientes para desenvolvimento, teste e produção
+	- banco de dados para cada ambiente
+	- execução de testes unitários em ambiente local
+	- suíte de testes completas em ambiente de teste
+	- simulação do ambiente real em staging
+	- deploy simplificado em produção
+
+Spring boot Profiles:
+	- configurações próprias para cada ambiente
+	- ambientes com sua configuração: dev, production
+
+Exercício:
+	- projeto com spring.initialzr e importar na IDE
+	- arquivos application.properties para dev e prod
+	- classe de configuração de BD e anotar com @Configuration
+	- mapear propriedades com @ConfigurationProperties
+
+Configurações com YAML
+	- troca no formato de configurações: formato .YML
+
+Exercícios juntos
+	- migrar app.properties do profile dev para YML
+	- executar o projeto pelo terminal
+
+Uso de command line:
+	- propriedades do arquivo de configuração na linha de comando
+	- sobrescreve as propriedades definidas no arquivo de configurações padrão
+	- valores passados como argumento na execução do projeto
+
+Exercício:
+	- passar como argumento a propriedade server.port=8085
+	- executar o projeto no terminal com o arguemento
+	- abrir o browser no endereço http://localhost:8085
+
+Variáveis de ambiente:
+	- variável de ambiente pode ser injetada através da anotação @Value no projeto
+	- linux e Mac: export comum de variável:
+		export ENV_DB_URL=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+	- windows: padrão de variável de ambiente
+
+	- injeção com anotação @Value({NOME_VARIAVEL})
+	- definição de valor default quando não há variável
+		@Value("${ENV_DB_URL:NENHUMA}")
+		private String dbEnvironmentVariable;
+
+Exercício:
+	- injetar a variável com @Value em AppController
+	- definição de valor default junto com a anotação @Value
+	- criar método para chamada do novo método e exibir o valor
+	- executar projeto no terminal e exibir no browser	
