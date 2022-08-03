@@ -1,0 +1,87 @@
+Spring Security
+É apenas um grupo de filtros de servlet que ajudam você a adicionar autenticação e autorização ao seu aplicativo da web
+
+Terminologia:
+- Autenticação: refere ao processo de verificação da identidade de um usuário, com base nas credenciais fornecidas. 
+Um exemplo comum é inserir um nome de usuário e uma senha ao fazer login em um site. 
+Você pode pensar nisso como uma resposta à pergunta "Quem é você"
+
+- Autorização: se refere ao processo de determinar se um usuário tem permissão adequada para executar uma ação específica ou ler dados específicos, 
+supondo que o usuário seja autenticado com êxito. Você pode pensar nisso como uma resposta à pergunta "Um usuário pode fazer/ler isso?"
+
+- Princípio: refere-se ao usuário autenticado no momento
+
+- Autoridade concedida: refere-se à permissão do usuário autenticado
+
+- Função: refere-se a um grupo de permissões do usuário autenticado
+
+Habilitar Segurança:
+- incluir na dependência no pom.xml
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
+O spring Security habilita um usuário de nome user e gera uma senha aleatoriamente a cada inicialização. 
+Para aplicações em produção esta não é uma abordagem um tanto aconselhável, e é por isso que vamos conhecer algumas outras configurações de segurança
+Para isso, deve-se habilitar no application.properties:
+
+- spring.security.user.name=user
+- spring.security.user.password=user123
+- spring.security.user.roles=USERS
+
+Geração de usuários em memória:
+é possível utilizar mais de um usuário
+
+Tipos de criptogreafias utilizadas peli Spring Security:
+- Use {bcrypt} for BCryptPasswordEncoder (mais comum)
+- Use {noop} for NoOpPasswordEncoder
+- Use {pbkdf2} for Pbkdf2PasswordEncoder
+- Use {scrypt} for SCryptPasswordEncoder
+- Use {sha256} for StandardPasswordEncoder
+
+-----------------------------------------------------------------------------
+JWT - JSON Web Token
+não é do framework spring
+
+O JSON Web Token - JWT é um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia, 
+cujo conteúdo contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo privado ou uma chave pública/privada.
+
+Estrutura do JWT:
+JWT é uma representação dividida em 3 partes:
+- Header
+- Payload
+- Signature
+
+Portanto, um JWT normalmente se parece com o seguinte: xxxxx.yyyyy.zzzzz
+
+1) Header
+O header ou cabeçalho normalmente consiste em duas partes: o tipo de token, que é JWT e o algoritmo de assinatura que está sendo utilizado, como HMAC SHA256 ou RSA.
+
+	{
+  		"alg": "HS256",
+  		"typ": "JWT"
+	}
+
+2) Payload
+De fato, a estrutura do corpo contendo as informações de autenticação e autorização de um usuário
+
+	{
+  		"sub": "glysns",
+  		"name": "GLEYSON SAMPAIO",
+  		"roles": ["USERS","MANAGERS"]
+	}
+
+3) Signature
+Para criar a parte da assinatura, você deve pegar o cabeçalho codificado, o payload codificado, a chave secreta, o algoritmo especificado no cabeçalho e assiná-lo.
+
+Pacotes:
+Dividimos as classes em pacotes de acordo com suas responsabilidades.
+
+model					Camada que contém as entidades da aplicação
+dto - data transfer object		Camada que contém os dtos da aplicação
+repository				Camada que contém os repositórios com base no Spring Data JPA
+service					Camada que detém da regra de negócio e comunicação com a base de dados via repositorys
+controller				Camada que contém os recursos https expostos na API
+security				Camada responsável para toda configuração de segurança.
