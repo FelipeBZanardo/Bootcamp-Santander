@@ -1,0 +1,69 @@
+Diretivas: 
+	fornecem meios para que possamos manipular o DOM ou estender as 
+	funcionalidades do elemento html
+
+Diretivas de atributos: 
+	Alteram a aparência ou o comportamento de um elemento,
+	componente ou outra diretiva, como por exemplo, ngClass e ngStyle
+
+Diretivas estruturais:
+	Modificam o layout adicionando ou removendo elementos do DOM,
+	como por exemplo, ngIf e ngFor
+
+Componentes:
+	Os componentes são diretivas com lógicas
+
+
+	- Atributo: 
+		- ngClass
+		- ngStyle
+	- Estrutural:
+		- ngIf
+		- ngFor
+		- ngSwitch
+
+	- Customizados:
+		- Hightilter
+		- Dropdown
+
+-------------------------------------------------------------------------------------------
+Instalar o bootstrap
+	npm install bootstrap
+
+	entrar no package.json e verificar se existe a dependência de bootstrap
+
+	para começar a usar o bootstrap:
+		- acessar angular.json
+		- encontrar a parte de estilos									"src/styles.css"
+		- acessar node_modules
+		- acessar a pasta bootstrap e verificar o caminho até o arquivo de estilos css			"node_modules/bootstrap/dist/css/bootstrap.min.css"
+		- copiar esse caminho na parte de estilos do angular.json após "src/styles.css"
+----------------------------------------------------------------------------------------------
+
+ngOnInit(): antes de inicializar o componente, faça algo!							não esquecer: na class colocar implements OnInit
+
+Ciclo de vida de um componente:
+	- Constructor
+	- ngOnChange
+	- ngOnInit
+	- ngDoCheck
+	- ngAfterContentInit
+	- ngAfterContentChecked
+	- ngAfterViewInit
+	- ngAfterViewChecked
+	- ngOnDestroy
+-----------------------------------------------------------------------------------------------
+ngStyle:
+	<div [ngStyle]="{background: count < 5 ? 'red' : 'green'}">
+  		<h2 class="text-center">Contador: {{ count }}</h2>
+	</div>
+
+ngClass: 
+	[ngClass]="{custom: count > 5}"
+
+	.custom {					no css
+    	color: #fff;
+    	font-weight: bold;
+    	font-style: italic;
+	}
+		

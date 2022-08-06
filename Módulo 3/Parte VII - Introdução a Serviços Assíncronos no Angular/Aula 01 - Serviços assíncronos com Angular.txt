@@ -1,0 +1,10 @@
+HttpClient:
+	é usado para fazer a comunicação entre cliente e servidor usando protocolo HTTp
+
+
+ - npm new crud-dio-angular
+ - npm install bootstrap
+ - colocar no estilo global o bootstrap:
+	- entrar na pasta angular.json
+	- na parte de stiles copiar o caminho do bootstrap.min.css
+	- na parte de scripts copiar o caminho "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"

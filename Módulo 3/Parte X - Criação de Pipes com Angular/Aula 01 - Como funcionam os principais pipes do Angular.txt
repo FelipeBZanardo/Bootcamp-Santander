@@ -1,0 +1,22 @@
+https://github.com/ivosoares/crud-dio-angular
+
+Pipes são funções simples que pode usar em expressões nos Templates
+para aceitar um valor de entrada e retornar um valor transformado
+
+Pipes nativos:
+- DatePipe
+- AsyncPipe
+- CurrencyPipe
+- DecimalPipe
+- l18nPluralPipe
+- l18nSelectPipe
+- JsonPipe			mostra um objeto como string
+- KeyValuePipe
+- LowerCasePipe
+- PercentPipe
+- SlicePipe
+- TitleCasePipe
+- UpperCasePipe
+
+pipe puro: padrão. Só executa se tiver uma alteração direta no valor de entrada
+pipe impuro: altera a cada detecção de alteração

@@ -1,0 +1,66 @@
+1) Criar um projeto angular:
+	- npm new cadastro-usuario
+
+2) Instalar o bootstrap:
+	- npm install bootstrap
+	- caso, mesmo instalado, o bootstrap não funcionar, colocar no header do index.html:
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+3) adicionar um component de navbar:
+	- ng g c components/navbar
+	- no html:
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   		 <div class="container">
+        		<a routerLink="/" class="navbar-brand">Cadastro de usuário</a>
+        		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            			<span class="navbar-toggler-icon"></span>
+        		</button> 
+        
+        		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+            			<ul class="navbar-nav mr-auto">
+                			<li class="nav-item">
+                    			<a routerLink="/" class="nav-link">Usuários</a>
+                			</li>
+            			</ul>
+        		</div>
+    		 </div>
+		</nav>
+
+4) criar uma lista de usuários:
+	- ng g c pages/users/users-list
+	- no html:
+		<div class="card w-100 my-5">
+    			<div class="card-body">
+        			<h1 class="card-title text-center">Lista de Usuários</h1>
+        			<button class="btn btn-success mb-4 float-end">Cadastrar Novo</button>
+        			<table class="table">
+           				<thead>
+                				<tr>
+                    					<th>id</th>
+                    					<th>Nome</th>
+                    					<th>Idade</th>
+                    					<th>Profissão</th>
+                    					<th colspan="2"></th>
+                				</tr>
+            				</thead>
+            				<tbody>
+                				<tr>
+                    					<td>1</td>
+                    					<td>Felipe</td>
+                    					<td>28</td>
+                    					<td>Engenheiro</td>
+                    					<td>
+                        					<button class="btn btn-primary">Editar</button>
+                    					</td>
+                    					<td>
+                        					<button class="btn btn-danger">Excluir</button>
+                    					</td>
+                				</tr>
+            				</tbody>
+        			</table>
+    			</div>
+		</div>

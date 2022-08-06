@@ -1,0 +1,57 @@
+Component: pode utilizá-lo mais de uma vez na página. Está relacionado com a interface para com o usuário
+
+Arquitetura de componentes:
+	Baseia-se na construção de componentes independentes, substituíveis e modulares 
+	que auxiliem no gerenciamento da complexidade e encorajem a reutilização
+
+	Benefícios:
+		- Escalabilidade
+		- Manutenção: fácil de achar erros
+		- Performance: do time como um todo
+
+Services:
+	- responsáveis por organizar e compartilhar lógica de negócios
+	- reutilizáveis entre diferentes componentes de uma aplicação
+	- mandatórios para uma arquitetura modular e reutilizável
+
+Injeção de dependência:
+	Todo serviço é uma dependência que precisa ser instanciada dentro do componente para ser
+	utilizada pelo mesmo. No angular, o componente pede para aplicação quais dependências ele precisa
+	e então as injeta dentro de si
+
+Ciclo de vida do componente:
+	Todo componente possui seu ciclo de vida(normalmente chamado de lifecycle hooks), que começa
+	assim que o Angular o instancializa na aplicação e através deles é possível 
+	executar diferenetes lógicas nos vários estágios de um componente.
+
+	ngOnInit, ngOnDestroy, ngOnChanges(é o primeiro antes de ngOnInit), ngDoCheck
+
+Constructor:
+	Deve ser utilizado apenas para inicializar serviços injetados via DI(Injeção de Dependência)
+
+ngOnInit:
+	Deve ser utilizado para todo tipo de lógica que o componente precisar executar após ter sido criado
+
+Data Binding:
+	é a forma como associamos informaçãoes que estão no compontente para o template e vice-versa
+
+	- String Interpolation: {{ valor }}
+	associa informação do componente para o template(html)
+
+	- Property Binding: [propriedade]="valor"
+	associa informação do componente para propriedades do template(html)
+
+	- Event Binding: (evento)="handler"
+	associa informações do template (html) para o componente
+
+	- Two-Way Data Binding: [(ngModel)]="propriedade"
+	associa informação entre ambos, ou seja, mantém ambos atualizados(componente e tamplate)
+
+
+@Input():
+	principal maneira de compartilhar dados do pai para o filho
+
+@Output():
+	principal maneira de compartilhar dados do filho para o pai
+
+	

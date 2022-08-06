@@ -1,0 +1,8 @@
+Diretivas estruturais:
+
+- ngIf: <h2 *ngIf="count > 7">O contador passou de 7!</h2>
+
+
+https://github.com/ivosoares/ambiente-angular
+
+https://drive.google.com/file/d/15eBGTxkQFwICWfCRO_I0H4uWIoY4fgQx/view?usp=sharing

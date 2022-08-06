@@ -1,0 +1,25 @@
+SMACSS:
+	é uma arquitetura modular e escalável para CSS, dividida em 5 camadas. 
+	
+	- base: estilização de seletores e pseudo-classes, além de resets
+	- layout: principais componentes como cabeçalho, rodapé, entre outros
+	- module: componentes reutilizáveis como botões e ícones
+	- state: todo elemento que será modificado ou terá alguma alteração no seu estado inicial
+	- Theme: temas específicos para uma mesma aplicação
+
+BEM CSS
+	A sigla BEM significa block, element, modifier(bloco, elemento e modificador), sendo
+	uma metodologia que segue conceitos para definir uma nomenclatura de nomes para classes CSS
+
+	nome do bloco: card
+	elementos: card_title, card_text, etc..
+	modifier: card_text--secondary		o modificador é --
+
+OOCSS 
+	é uma metodologia que identifica um padrão visual que pode se repetir no projeto
+	e o agrupa em classes, tornando-os reutilizáveis
+
+	btn-primary, btn-secondary, btn-danger, etc...
+
+
+https://drive.google.com/file/d/1Wv4BDj7YXd9mBsvTc-tBACAw0Hb-FN8U/view?usp=sharing

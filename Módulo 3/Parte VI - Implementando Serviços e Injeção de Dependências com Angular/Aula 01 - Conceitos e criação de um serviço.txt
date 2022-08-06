@@ -1,0 +1,33 @@
+Serviços:
+	Um serviço Angular reutilizável é projetado para encapsular a lógica de negócios
+	e os dados com diferentes componentes do Angular. É basicamente uma classe
+	que tem um propósito bem definido para fazer algo. Você pode criar uma classe de
+	serviço para dados ou lógica que não está associada a nenhuma visualização específica 
+	para compartilhar entre os componentes
+
+Para que serve os services?
+	Se você escrever toda a lógica de negócios em componentes, terá os seguintes 
+	problemas:
+	
+		- não poderá reutilizar essa lógica em nenhum outro lugar e terá
+		que recodificar toda a lógica no componente de destino
+		- a manutenção de seus componentes será difícil, pois terá que manter 
+		duas cópias do mesmo código
+
+Injeção de dependência:
+	é usada para fornecer aos componentes os serviços que eles podem usar.
+	Para definir uma classe como um serviço no Angular, o decorator
+	@Injectable() é usado.
+	Ele fornece os metadados que permitem ao Angular injetá-los em um componente
+	como uma dependência.
+	Da mesma forma, o decorator @Injectable() é usado para indicar que um
+	componente ou outra classe (como outro serviço, um pipe ou um
+	ngModule) possui uma dependência
+------------------------------------------------------------------------------------------------
+
+colocar em app.module.ts o nome do service em providers
+
+
+https://github.com/ivosoares/ambiente-angular
+
+https://drive.google.com/file/d/1TtkbHcue3FolQM2iebpEzteiU0w5TMLi/view?usp=sharing

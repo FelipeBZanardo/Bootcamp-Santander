@@ -1,0 +1,53 @@
+https://github.com/ivosoares/crud-dio-angular
+
+Do componente para o DOM:
+	- Interpolação: {{ pageTitle }}
+	- Property binding: <img [src]='game.imageUrl'
+
+Do DOM para o Component:
+	- Event Binding: <button (click)='toggleImage()'>
+
+Para ambos:
+	- Two-Way Binding: <input [(ngModel)]='listFilter>
+
+Interpolação: {{valor}}
+	associa informação do componente para o template(HTML)
+
+Property Binding: [propriedade]='valor'
+	associa informação do componente para o template(HTML)
+
+Event Binding: (evento)="handler"
+	associa informação do template (HTML) para o componente
+
+Two-Way Data Binding: [(ngModel)]="propriedade"
+	associa informação entre ambos, ou seja, mantém ambos atualizados (componente e template)
+
+-----------------------------------------------------------------------------------------------
+Ciclo de vida:
+
+	constructor
+	ngOnChanges			só é chamado em caso de input
+	ngOnInit			é chamdo assim que o componente inicia(que é renderizado)
+	ngDoCheck			
+		ngAfterContentInit
+		ngAfterContentChecked
+		ngAfterViewInit
+		ngAfterViewchecked
+	ngOnDestroy			componente é destruído
+
+
+ngOnChanges: uma vez na criação do componente e sempre que houver alteração em uma de suas propriedades de entrada
+
+ngOnInit: é chamado uma única vez quando o componente é incializado
+
+ngDoCheck: a cada ciclo de detecção de alterações (use para alterações que o Angular não detecta)
+
+ngAfterContentInit: depois que o conteúdo externo é inserido no componente. Por exemplo, vindo do <ng-content>
+
+ngAfterContentChecked: após a verificação do conteúdo externo
+
+ngAfterViewInit: logo após o conteúdo do próprio componente e de seus filhos serem inializados
+
+ngAfterViewChecked: cada vez que o conteúdo é verificado pelo mecanismo de detecção de alterações do Angular
+
+ngOnDestroy: antes do Angular destruir o componente

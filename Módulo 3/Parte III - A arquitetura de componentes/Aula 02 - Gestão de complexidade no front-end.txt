@@ -1,0 +1,28 @@
+Componentes apresentacionais:
+	- parecido com funções puras
+	- se preocupam apenas com a interface do usuário
+	- não ficam responsáveis por recuperar dados ou lidar com lógica de negócio
+	- não causam efeitos colaterais na aplicação
+	- recebem dados via @Input e emite via @Output
+
+Componentes inteligentes:
+	- parecido com funções impuras
+	- contém toda a lógica de negócio
+	- são internamente compostos por componentes apresentacionais
+	- ficam responsáveis por repassar os dados para os componentes apresentacionais apresentar ao usuário final
+
+Design Modular:
+	Divisão de aplicação web em módulos de recursos que representam diferentes funcionalidades de negócio
+
+	Core Module: define serviços singleton, componentes de instância única, configuração e 
+	exportação de quaisquer módulos de terceiros necessários no módulo principal(AppModule).
+
+	Shared Module: contém componentes/pipes/diretivas comuns e também exporta módulos do Angular 
+	usados com frequência(CommonsModule)
+
+	Feature Module: organiza um conjunto de recursos da aplicação num módulo de funcionalidade
+
+	Library: possui código que pode ser reutilizável entre diferentes aplicações
+
+	Angular Element: recurso do angular para criar web components, padrão da web para definir novos 
+	elementos HTML de uma maneira independente de estrutura e agnóstica de frameworks
