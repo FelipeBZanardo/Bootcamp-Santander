@@ -6,6 +6,8 @@ Lembrando que se trata de anotações pessoais sobre os vídeos assistidos e por
 
 ## Aulas assistidas:
 
-- Módulo I - Conteúdo de abertura:
-  - Introdução à Programação e Pensamento Computacional
-  - Introdução ao Git e ao GitHub
+- Módulo I - Conteúdo de abertura
+- Módulo II -  HTML/CSS3/JS
+-  Módulo III - Angular
+-  Módulo IV - JAVA
+-  Módulo V - Spring Framework
